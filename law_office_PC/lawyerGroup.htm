@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0027)http://www.tairenlvshi.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>秦岳律师事务所_律师团队_咨询_免费法律咨询</title>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/public.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/lawyerGroup.css">
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.js"></script>
+</head>
+<style>
+
+</style>
+<body ondragstart="return false">
+{dede:include filename="header.htm"/}
+<div id="banner_law">
+</div>
+<div id="list_team">
+    <div class="content">
+        <h5>OUR TEAM<span>我们的团队</span></h5>
+        <div class="title_but_list">
+            <ul id="title_but_list">
+
+                {dede:channel currentstyle="<li><a href='~typelink~' class='li2'>~typename~</a></li>"}
+                <li><a href='[field:typeurl/]'>[field:typename/]</a></li>{/dede:channel}
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="lawy_list" id="lawyer_tr_list">
+            <ul  style="top: 0px;">
+                {dede:list addfields='dede_worktime,dede_shanchang' row='12' channelid='17'}
+                    <li ><a href="[field:arcurl/]">
+                        <div class="top"><img src="[field:picname/]"></div>
+                        <div class="buttom">
+                            <h6><span class="span1">[field:title/]</span><span class="span2">工作年限：[field:dede_worktime/]年</span></h6>
+                            <p style="overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; ">[field:description function='cn_substr(@me,110)'/]</p>
+                        </div></a>
+                        <div class="but">
+                            <a href="[field:arcurl/]" target="_blank" class="a">查看详情</a>
+                            <a class="a1" href="" target="_blank">立即咨询</a>
+                        </div>
+                        <h4 style="display:none">擅长： [field:dede_shanchang/]</h4>
+                    </li>
+                {/dede:list}
+
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="paging_lf_trls">
+            <ul>
+                {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $('#lawyer_tr_list li').hover(function(){
+        $(this).find(".a").css('background','#fff');
+        $(this).find(".a").css('color','#a30202');
+        $(this).find("span").css('color','#fff');
+        $(this).find("p").css('color','#fff');
+        $(this).find("h4").css('display','block');
+	$(this).find("h4").css('overflow','hidden');
+        $(this).css('box-shadow','0px 0px 5px #a30202');
+        $(this).css('background','#a30202');
+
+        $(this).animate({top:-34},200);
+    },function(){
+        $(this).css('box-shadow','');
+        $(this).find(".a").css('background','#a30202');
+        $(this).find(".a").css('color','#fff');
+        $(this).find("span").css('color','#333');
+        $(this).find("p").css('color','#333');
+        $(this).find("h4").css('display','none');
+        $(this).css('background','#f0f0f0');
+        $(this).animate({top:0},200);
+    })
+</script>
+{dede:include filename="footer.htm"/}
+
+</body>
+</html>

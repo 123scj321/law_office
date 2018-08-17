@@ -1,0 +1,61 @@
+#ph_banner{width:100%;}
+#ph_banner img{width:100%;}
+
+/*修改placeholder的颜色end*/
+.importantNew .w{padding-bottom: 20px;}
+.importantNew h1{
+	color: #a30202;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top:20px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #d9d9d9;
+	box-sizing: border-box;
+}
+.importantNew .new_box_list li{
+	margin-top: 9px ;
+	padding-bottom:9px;
+	border-bottom:1px dashed #e6e6e6;
+}
+.importantNew .new_box_list li a, .model .su_list li a{ display: block;}
+.importantNew .new_box_list .new_img{
+	width: 47px;
+	height:47px;
+}
+.importantNew .new_img img{
+	width: 100%;
+	height:100%;
+}
+.importantNew .new_text{
+	width: 222px;
+    	white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+	margin-left: 30px;
+	line-height: 47px;
+	color: #838383;
+}
+.importantNew .new_text:hover{
+	color: #a30202;
+	cursor:  default;
+}
+.cfff{ background: #FFFFFF;}
+/*------------联系我们-------------*/
+.lianxi{
+	width:94%; margin:0 auto;
+}
+.lianxi .w h1{
+	font-size:1.5em;font-family:'微软雅黑'; color:#a30202;
+	margin: 5px 0;
+}
+.lianxi .w p{
+	font-size:1em;font-family:'微软雅黑'; color:#666;
+	margin: 14px 0;
+}
+.lianxi .contact_add i{
+	float: left;
+}
+.lianxi .contact_add span{
+	display: inline-block;
+	width: 240px;
+}

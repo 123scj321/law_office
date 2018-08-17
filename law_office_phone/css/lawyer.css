@@ -1,0 +1,23 @@
+/*banner样式*/
+#ph_banner{ width:100%;}
+#ph_banner img{ width:100%;}
+
+/*按钮*/
+#media_butt{width:100%;}
+#media_butt .media_content{width:100%; height:44px; overflow: hidden; position: relative;border-bottom:1px solid #ccc;}
+#media_butt .media_content ul{width: 910px;}
+#media_butt .media_content ul li{ width:100px; float:left; text-align:center;height:44px; background:#f3f5f8; border-right:1px solid #ccc;}
+#media_butt .media_content ul li a{ line-height: 44px; font-size:1rem;font-family:'微软雅黑'; color:#000;}
+
+/*案例list*/
+#anli_list_l{ width:100%;}
+#anli_list_l .content ul li{ border-bottom:1px solid #dadada;}
+#anli_list_l .content ul li .al_left{ margin:15px 0 15px 3%; width:24%; float:left;}
+#anli_list_l .content ul li .al_left img{ width:100%;border-radius:50%; height:90px;}
+#anli_list_l .content ul li .al_right{width:66%; float:left;  margin:15px 0 15px 3%;}
+#anli_list_l .content ul li .al_right h5{font-size:0.9rem;font-family:'微软雅黑'; color:#000; font-weight:inherit;}
+#anli_list_l .content ul li .al_right h5 .span1{ margin-left:50px; color:#666; font-size:0.6rem;}
+#anli_list_l .content ul li .al_right p{font-size:0.6em;font-family:'微软雅黑'; color:#666;font-weight:inherit;line-height:22px; }
+#anli_list_l .content ul li .al_right .ls_but{  margin-top:3px;}
+#anli_list_l .content ul li .al_right .ls_but a{text-align:center; display:inline-block;width:76px; height:20px;background:#00b968; margin-right:30px; line-height:20px; font-size:0.7em;font-family:'微软雅黑'; color:#fff;border-radius:10px; }
+#anli_list_l .content ul li .al_right .ls_but .a1{ background:#a30202;}

@@ -1,0 +1,911 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0027)http://www.tairenlvshi.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>秦岳律师事务所_在线律师咨询_免费法律咨询</title>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/index.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/public.css">
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./css/index.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./css/public.css">-->
+    <!--<script type="text/javascript" src="./js/jquery-1.4.2.js"></script>-->
+</head>
+
+<body ondragstart="return false">
+{dede:include filename="header.htm"/}
+<!--轮播图 banner-->
+<div id="banner" style="background: url({dede:global.cfg_templets_skin/}/images/banner/banner-1.png) center top no-repeat;">
+    <a href="#" >
+    </a>
+    <div class="content"><a href="javascript:;&fi=48067" >
+        <div class="title"></div>
+        <div class="advantage">
+            <img src="{dede:global.cfg_templets_skin/}/images/banner/banner-09.png">
+            <ul>
+                <li><span id="l_satisfaction">99.1</span>%</li>
+                <li class="li1"><span id="l_year">8</span>年</li>
+                <li class="li2"><span id="l_problem">1000</span>名</li>
+                <li class="li3"><span id="l_loss">31</span>家</li>
+                <li class="li4"><span id="l_case">9000</span>+</li>
+            </ul>
+        </div></a>
+        <div class="banner_but">
+            <ul id="bann_tr_list">
+                <li onclick="tr_banner(1)" class=""></li>
+                <li onclick="tr_banner(2)" class=""></li>
+                <li onclick="tr_banner(3)" class=""></li>
+                <li onclick="tr_banner(4)" class=""></li>
+                <li onclick="tr_banner(5)" class="li1"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    //轮播图样式
+    var tr_i=1;
+    function tr_banner(id){
+        tr_i=id;
+        $('#bann_tr_list li').removeClass('li1');
+        $('#bann_tr_list li').eq(tr_i-1).addClass('li1');
+        $('#banner').css('background','url({dede:global.cfg_templets_skin/}/images/banner/banner-'+tr_i+'.png) no-repeat center top');
+    }
+    var l_t_banner= setInterval("tr_banner_t()",6000);
+    tr_i>=6000&&clearInterval(l_t_banner);
+    function tr_banner_t(){
+        tr_i++;
+        if(tr_i>5){
+            tr_i=1;
+        }
+        $('#bann_tr_list li').removeClass('li1');
+        $('#bann_tr_list li').eq(tr_i-1).addClass('li1');
+        $('#banner').css('background','url({dede:global.cfg_templets_skin/}/images/banner/banner-'+tr_i+'.png) no-repeat center top');
+    }
+
+
+    var year_i=1;
+    function l_year(){
+        if(year_i>=8){
+            year_i=8;
+        }
+        $('#l_year').text(year_i);
+        year_i++;
+    }
+    var l_yea= setInterval("l_year()",272);
+    year_i>=8&&clearInterval("l_yea");
+    var problem_i=1;
+    function l_problem(){
+        if(problem_i>=1000){
+            problem_i=1000;
+        }
+        $('#l_problem').text(problem_i);
+        problem_i+=10;
+    }
+    var l_proble= setInterval("l_problem()",13);
+    problem_i>=1000&&clearInterval("l_proble");
+    var satisfaction_i=1;
+    function l_satisfaction(){
+        if(satisfaction_i>=99){
+            satisfaction_i=99.1;
+        }
+        $('#l_satisfaction').text(satisfaction_i);
+        satisfaction_i++;
+    }
+    var l_satisfactio= setInterval("l_satisfaction()",30);
+    satisfaction_i>=99.1&&clearInterval("l_satisfactio");
+    var loss_i=1;
+    function l_los(){
+        if(loss_i>=31){
+            loss_i=31;
+        }
+        $('#l_loss').text(loss_i);
+        loss_i++;
+    }
+    var l_loss= setInterval("l_los()",7.5);
+    loss_i>=99.1&&clearInterval("l_loss");
+    var case_i=1;
+    function l_cas(){
+        if(case_i>=9000){
+            case_i=9000;
+        }
+        $('#l_case').text(case_i);
+        case_i+=10;
+    }
+    var case_i= setInterval("l_cas()",5);
+    loss_i>=9000&&clearInterval("case_i");
+</script>
+<!--法律问题免费咨询-->
+<div id="legal">
+   <div class="content">
+     <div class="title">
+         <img src="{dede:global.cfg_templets_skin/}/images/index/index-02.png" alt="">
+         <div>
+             <h1>法律问题免费咨询</h1>
+             <h4>（近1000名金牌律师为您解答）</h4>
+         </div>
+         <img src="{dede:global.cfg_templets_skin/}/images/index/index-01.png" alt="">
+     </div>
+     <div class="list">
+       <ul id="legal_l_list">
+          <li class="li1"><a href="javascript:;fi=48067" target="_blank">
+            <div class="legal_top"><img src="{dede:global.cfg_templets_skin/}/images/index/index-39.png"></div>
+            <div class="legal_bottom">
+              <h5>免费法律咨询</h5>
+              <p>资深法律顾问在线解答</p>
+              <h6>免费咨询</h6>
+            </div>
+          </a></li>
+          <li style="top: 0px;"><a href="javascript:;fi=48067" target="_blank">
+            <div class="legal_top"><img src="{dede:global.cfg_templets_skin/}/images/index/index-41.png"></div>
+            <div class="legal_bottom">
+              <h5>律师</h5>
+              <p>律师24小时1对1VIP服务</p>
+              <h6 >免费咨询</h6>
+            </div>
+          </a></li>
+          <li style="top: 0px;"><a href="javascript:;fi=48067" target="_blank">
+            <div class="legal_top"><img src="{dede:global.cfg_templets_skin/}/images/index/index-42.png"></div>
+            <div class="legal_bottom">
+              <h5>律师函</h5>
+              <p>对对方提出严正警告，促成纠纷解决</p>
+              <h6 >免费咨询</h6>
+            </div>
+          </a></li>
+          <li><a href="javascript:;fi=48067" target="_blank">
+            <div class="legal_top"><img src="{dede:global.cfg_templets_skin/}/images/index/index-40.png"></div>
+            <div class="legal_bottom">
+              <h5>打官司</h5>
+              <p>为您解决各种法律纠纷</p>
+              <h6>免费咨询</h6>
+            </div>
+          </a></li>
+          <div class="clear"></div>
+       </ul>
+     </div>
+   </div>
+</div>
+<script>
+  $('#legal_l_list li').hover(function(){
+
+	  $(this).css('box-shadow','0px 0px 10px #e79292');
+	  $(this).animate({top:-25},200);
+  },function(){
+	  $(this).css('box-shadow','');
+	  $(this).animate({top:0},200);
+  })
+</script>
+<!--法律问题免费咨询 下面-->
+<div id="field">
+  <div class="content">
+     <div class="field_left"><a href="/professional/"><img src="{dede:global.cfg_templets_skin/}/images/index/index-15.png"></a></div>
+     <div class="field_right">
+        <ul id="field_tr_list">
+          <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-05.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-06.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-07.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-12.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-09.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-10.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-11.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-13.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-08.png"></a></li>
+            <li class="" style="top: 0px;"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/index-14.png"></a></li>
+        </ul>
+     </div>
+  </div>
+</div>
+<script>
+  $('#field_tr_list li').hover(function(){
+	  $(this).css('box-shadow','0px 0px 20px #000');
+	  $(this).animate({top:-10},200);
+  },function(){
+	  $(this).css('box-shadow','');
+	  $(this).animate({top:0},200);
+  })
+</script>
+<!--推荐律师-->
+<div id="lawyer">
+    <div class="content">
+        <div class="title">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-02.png" alt="">
+            <div>
+                <h1>推荐律师</h1>
+                <h4>（近1000名金牌律师为您解答）</h4>
+            </div>
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-01.png" alt="">
+        </div>
+        <div class="lawy_list" id="lawyer_tr_list">
+            <ul  style="top: 0px;">
+                {dede:arclist typeid='5' row='4' addfields='dede_worktime,dede_shanchang' channelid='17' flag='c' }
+                <li ><a href="[field:arcurl/]">
+                    <div class="top"><img src="[field:picname/]"></div>
+                    <div class="buttom">
+                        <h6><span class="span1">[field:title/]</span><span class="span2">工作年限：[field:dede_worktime/]年</span></h6>
+                        <p style="overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; ">[field:description function='cn_substr(@me,110)'/]</p>
+                    </div></a>
+                    <div class="but">
+                        <a href="[field:arcurl/]" target="_blank" class="a">查看详情</a>
+                        <a class="a1" href="" target="_blank">立即咨询</a>
+                    </div>
+                    <h4 style="display:none">擅长： [field:dede_shanchang/]</h4>
+                </li>
+                {/dede:arclist}
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="lawyer_button">
+        <a href="/team/">查看更多</a>
+    </div>
+</div>
+<script>
+
+    $('#lawyer_tr_list li').hover(function(){
+        $(this).find(".a").css('background','#fff');
+        $(this).find(".a").css('color','#a30202');
+        $(this).find("span").css('color','#fff');
+        $(this).find("p").css('color','#fff');
+        $(this).find("h4").css('display','block');
+        $(this).css('box-shadow','0px 0px 5px #a30202');
+        $(this).css('background','#a30202');
+        $(this).find("h4").css('overflow','hidden');
+        $(this).animate({top:-34},200);
+    },function(){
+        $(this).css('box-shadow','');
+        $(this).find(".a").css('background','#a30202');
+        $(this).find(".a").css('color','#fff');
+        $(this).find("span").css('color','#333');
+        $(this).find("p").css('color','#333');
+        $(this).find("h4").css('display','none');
+        $(this).css('background','#f0f0f0');
+        $(this).animate({top:0},200);
+    })
+</script>
+<div id="advisory">
+   <div class="content">
+       <h5>在线<span class="span1">诊断</span><span class="span2">你关心的律师专家都能解决</span>
+       </h5>
+       <div class="advisory_left">
+         <div class="list">
+            <ul id="advisory_l_list" style="top: -530px;">
+               <li class="li1"><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx.png"></div>
+                  <div class="right">
+                     <h6>何正泉律师<span>30秒前</span></h6>
+                     <p>通过电话接受了用户151****7469的电话咨询</p>
+                  </div>
+               </a></li>
+               <li><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_4.png"></div>
+                  <div class="right">
+                     <h6>李泽华律师<span>40秒前</span></h6>
+                     <p>通过电话接受了用户183****7351的电话咨询</p>
+                  </div>
+               </a></li>
+               <li class="li1"><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_2.png"></div>
+                  <div class="right">
+                     <h6>黄永华律师<span>1分钟前</span></h6>
+                     <p>通过电话接受了用户131****6573的电话咨询</p>
+                  </div>
+               </a></li>
+            
+                <li><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_3.png"></div>
+                  <div class="right">
+                     <h6>李宝平律师<span>4分钟前</span></h6>
+                     <p>通过电话接受了用户182****5537的电话咨询</p>
+                  </div>
+               </a></li>
+               <li class="li1"><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_4.png"></div>
+                  <div class="right">
+                     <h6>李泽华律师<span>8分钟前</span></h6>
+                     <p>通过电话接受了用户173****0648的电话咨询</p>
+                  </div>
+               </a></li>
+               <li><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_5.png"></div>
+                  <div class="right">
+                     <h6>苗元本律师<span>16分钟前</span></h6>
+                     <p>通过电话接受了用户153****6219的电话咨询</p>
+                  </div>
+               </a></li>
+               <li class="li1"><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_6.png"></div>
+                  <div class="right">
+                     <h6>瞿政律师<span>20分钟前</span></h6>
+                     <p>通过电话接受了用户182****5483的电话咨询</p>
+                  </div>
+               </a></li>
+               <li><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_7.png"></div>
+                  <div class="right">
+                     <h6>周光发律师<span>30分钟前</span></h6>
+                     <p>通过电话接受了用户133****5689的电话咨询</p>
+                  </div>
+               </a></li>
+			     <li class="li1"><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx.png"></div>
+                  <div class="right">
+                     <h6>何正泉律师<span>30秒前</span></h6>
+                     <p>通过电话接受了用户151****7469的电话咨询</p>
+                  </div>
+               </a></li>
+               <li><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_3.png"></div>
+                  <div class="right">
+                     <h6>李宝平律师<span>40秒前</span></h6>
+                     <p>通过电话接受了用户183****7351的电话咨询</p>
+                  </div>
+               </a></li>
+               <li class="li1"><a target="_blank">
+                  <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_2.png"></div>
+                  <div class="right">
+                     <h6>黄永华律师<span>1分钟前</span></h6>
+                     <p>通过电话接受了用户131****6573的电话咨询</p>
+                  </div>
+               </a></li>
+
+            </ul>
+         </div>
+       </div>
+       <div class="advisory_right">
+          <div class="input_advisory">
+             <h5>免费在线诊断</h5>
+             <h6>先诊断，再安排律师为您详细解答</h6>
+			 <form action="/plus/diy.php" enctype="multipart/form-data" method="post" id="formid">
+                 <input type="hidden" name="action" value="post" />
+                 <input type="hidden" name="diyid" value="3" />
+                 <input type="hidden" name="do" value="2" />
+                 <div class="textarea">
+                     <textarea name='consult_context' id='consult_context' placeholder="请输入您要咨询的问题，以便律师快速回复..." onchange="dh0()" style="width:100%;max-height: 80px;"></textarea>
+                     <script>
+                         function dh0(){
+                             var textarea = $("#consult_context").val();
+                             if(textarea){
+                             }else{
+                                 alert("*请输入正确号码");
+                                 $("#consult_context").val(null);
+                                 $("#consult_context")[0].focus();
+                             }
+                         }
+                     </script>
+                 </div>
+                 <div class="input">
+                     <input placeholder="请输入您的手机号码" type="text" onchange="dh1()" name='consult_phone' id='consult_phone' value="">
+                     <script>
+                         function dh1(){
+                             var phone1 = $("#consult_phone").val();
+                             if(phone1 && /^1[3|4|5|7|8]\d{9}$/.test(phone1)){
+                             }else{
+                                 alert("*请输入正确号码");
+                                 $("#consult_phone").val(null);
+                                 $("#consult_phone")[0].focus();
+                             }
+                         }
+                     </script>
+                 </div>
+             <div class="button">
+                 <input type="hidden" name="dede_fields" value="consult_phone,text;consult_context,multitext" />
+                 <input type="hidden" name="dede_fieldshash" value="177b2b02b5d043aca328714bcdc789ca" />
+                 <input type="submit" name="submit" onclick="button_l()" value="立即咨询">
+             </div>
+			 </form>
+             <div class="p_l">
+                 <p>您的信息我们会严格保密</p>
+             </div>
+          </div>
+       </div>
+       <script>
+           function button_l(){
+               var phone = $("#consult_phone").val();
+               var content_zx = $("#consult_context").val();
+               if(phone && content_zx){
+                           alert('提交成功，秦岳律师稍后联系您！');
+                           window.location.reload();//刷新当前页面.
+               }else{
+                   alert('请填写你的咨询内容或电话号码！');
+                   return;
+               }
+           }
+
+       </script>
+       <div class="advisory_left">
+           <div class="list">
+               <ul id="advisory_l_list_right" style="top: -530px;">
+                   <li class="li1"><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx.png"></div>
+                       <div class="right">
+                           <h6>何正泉律师<span>30秒前</span></h6>
+                           <p>通过电话接受了用户151****7469的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_4.png"></div>
+                       <div class="right">
+                           <h6>李泽华律师<span>40秒前</span></h6>
+                           <p>通过电话接受了用户183****7351的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li class="li1"><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_2.png"></div>
+                       <div class="right">
+                           <h6>黄永华律师<span>1分钟前</span></h6>
+                           <p>通过电话接受了用户131****6573的电话咨询</p>
+                       </div>
+                   </a></li>
+
+                   <li><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_3.png"></div>
+                       <div class="right">
+                           <h6>李宝平律师<span>4分钟前</span></h6>
+                           <p>通过电话接受了用户182****5537的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li class="li1"><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_4.png"></div>
+                       <div class="right">
+                           <h6>李泽华律师<span>8分钟前</span></h6>
+                           <p>通过电话接受了用户173****0648的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_5.png"></div>
+                       <div class="right">
+                           <h6>苗元本律师<span>16分钟前</span></h6>
+                           <p>通过电话接受了用户153****6219的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li class="li1"><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_6.png"></div>
+                       <div class="right">
+                           <h6>瞿政律师<span>20分钟前</span></h6>
+                           <p>通过电话接受了用户182****5483的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_7.png"></div>
+                       <div class="right">
+                           <h6>周光发律师<span>30分钟前</span></h6>
+                           <p>通过电话接受了用户133****5689的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li class="li1"><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx.png"></div>
+                       <div class="right">
+                           <h6>何正泉律师<span>30秒前</span></h6>
+                           <p>通过电话接受了用户151****7469的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_3.png"></div>
+                       <div class="right">
+                           <h6>李宝平律师<span>40秒前</span></h6>
+                           <p>通过电话接受了用户183****7351的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <li class="li1"><a target="_blank">
+                       <div class="left"><img src="{dede:global.cfg_templets_skin/}/images/index/advisory_tx_2.png"></div>
+                       <div class="right">
+                           <h6>黄永华律师<span>1分钟前</span></h6>
+                           <p>通过电话接受了用户131****6573的电话咨询</p>
+                       </div>
+                   </a></li>
+                   <div class="clear"></div>
+               </ul>
+           </div>
+       </div>
+
+   </div>
+</div>
+<script>
+zx_num = $('#advisory_l_list li').length;
+var zx_i=1;
+function zx_banndis(){
+	  if(zx_i>=(zx_num-6)*30){
+		zx_i=0; 
+	 }
+   $('#advisory_l_list').css('top',-zx_i);
+	zx_i++;
+ }
+ var zx_b = setInterval("zx_banndis()",25);
+ $("#advisory_l_list").hover(function(){
+	clearInterval(zx_b);
+ },function(){
+	zx_b = setInterval("zx_banndis()",25);
+ });
+ zx_n=$('#advisory_l_list_right li').length;
+
+var zx=1;
+function zx_ban(){
+    if(zx>=(zx_n-6)*30){
+        zx=0;
+    }
+   // console.log(zx);
+    $('#advisory_l_list_right').css('top',-zx);
+    zx++;
+}
+var zx_b1 = setInterval("zx_ban()",25);
+$("#advisory_l_list_right").hover(function(){
+    clearInterval(zx_b1);
+},function(){
+    zx_b1 = setInterval("zx_ban()",25);
+});
+</script>
+<!--秦岳经典案例-->
+<div id="case">
+    <div class="content">
+        <div class="title">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-19.png" alt="">
+            <div>
+                <h1>秦岳经典案例</h1>
+                <h4>（近1000名金牌律师为您解答）</h4>
+            </div>
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-20.png" alt="">
+        </div>
+        <div class="list">
+            <ul>
+                {dede:arclist typeid='18' row='6' addfields='dede_times,dede_subtitle' channelid='18' flag='c' }
+                <li >
+                    <a href="[field:arcurl/]" target="_blank">
+                        <div class="left">
+                            <p><img src="[field:picname/]" alt=""></p>
+                            <p class="text_cover"><span>工商<br>赔偿</span></p>
+                        </div>
+                        <div class="right">
+                            <h6>[field:title/]</h6>
+                            <p>【[field:pubdate function="MyDate('Y-m-d',@me)"/]】</p>
+                            <h4 style="width:98%;height:40px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;">
+                                [field:dede_subtitle/]
+                            </h4>
+                        </div>
+                    </a>
+                </li>
+                {/dede:arclist}
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="more"><a href="/susonganli/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/index/case_m.png"></a></div>
+    </div>
+</div>
+<!---->
+<!--联盟律师-->
+<div id="resummen">
+    <div class="content">
+        <div class="title">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-02.png" alt="">
+            <div>
+                <h1>联盟律师</h1>
+                <h4>（近1000名金牌律师为您解答）</h4>
+            </div>
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-01.png" alt="">
+        </div>
+        <div class="list">
+            <ul >
+                <li class="li1">郑州</li>
+                <li>洛阳</li>
+                <li>北京</li>
+                <li>上海</li>
+                <li>天津</li>
+                <li>青岛</li>
+                <li>济南</li>
+                <li>无锡</li>
+                <li>武汉</li>
+                <li>广州</li>
+                <li>长沙</li>
+                <li>石家庄</li>
+                <li>成都</li>
+                <li>温州</li>
+                <li>厦门</li>
+                <li>大连</li>
+                <li>襄阳</li>
+                <li>西安</li>
+                <li>山西</li>
+                <li>重庆</li>
+                <li>江苏</li>
+                <li>福州</li>
+                <li>武汉</li>
+                <li>东莞</li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+
+    </div>
+    <div class="union_lawyer_context">
+        <div class="content">
+            <div class="left" id="address_left">
+                <img src="{dede:global.cfg_templets_skin/}/images/index/left-01.png" alt="">
+            </div>
+            <div class="center">
+                <ul style="left:0" id="address_item">
+                    <li>
+                        <div class="address">郑州</div>
+                        <div class="address_detail">
+                            <span>西安秦岳律师事务所</span><br>
+                            地址：西安市未央区凤城二路  海洋大厦703 <br>
+                            邮编：150000 <br>
+                            电话：029-55666998 <br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address">郑州</div>
+                        <div class="address_detail">
+                            <span>西安秦岳律师事务所</span><br>
+                            地址：西安市未央区凤城二路  海洋大厦703 <br>
+                            邮编：150000 <br>
+                            电话：029-55666998 <br>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="right" id="address_right">
+                <img src="{dede:global.cfg_templets_skin/}/images/index/right-02.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var address=[
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"西安",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"郑州",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"洛阳",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"上海",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"天津",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"青岛",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"济南",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"无锡",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"武汉",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"广州",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"长沙",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"石家庄",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"成都",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"温州",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"厦门",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"大连",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"襄阳",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"山西",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"重庆",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"江苏",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"福州",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"武汉",postcodes :"150000",phone:"029-55666998"},
+    {name:"西安秦岳律师事务所",address:"西安市未央区凤城二路  海洋大厦703",city:"东莞",postcodes :"150000",phone:"029-55666998"},
+    ];
+    var list_city="";
+    var list="";
+    for(var i=0;i<address.length;i++){
+        list_city+=i==0?`<li class="li1">${address[i].city}</li>`:`<li>${address[i].city}</li>`;
+        list+=`<li>
+               <div  class="address_content">
+                <div class="address">${address[i].city}</div>
+                   <div class="address_detail">
+                   <span>${address[i].name}</span><br/>
+                   地址：${address[i].address} <br/>
+                   邮编：${address[i].postcodes} <br/>
+                   电话：${address[i].phone} <br/>
+                 </div>
+                 </div>
+             </li>`;
+    }
+    list_city+=`<div class="clear"></div>`;
+
+    $("#resummen .content .list ul").html(list_city);
+    console.log("联盟律师",list);
+    $("#address_item").html(list);
+    var current_address=$("#resummen .content .list ul").children();
+
+    $("#resummen .content .list ul li").click(function(){
+            $("#resummen .content .list ul").find(".li1").removeClass();
+            $(this).addClass('li1');
+                for(var i=0;i<current_address.length;i++){
+                    console.log("this is",current_address[i].className,i);
+                    if(current_address[i].className=="li1"){
+                        $("#address_item").animate({left:-i*900},200);
+                    }
+                }
+            }
+        );
+    $("#address_right").click(function(){
+            for(var i=0;i<current_address.length;i++){
+                console.log("this is",current_address[i].className,i);
+                if(current_address[i].className=="li1"&&i<current_address.length-2){
+                    $("#address_item").animate({left:-(i+1)*900},200);
+                    $("#resummen .content .list ul").find("li.li1").next().addClass("li1");
+                    $("#resummen .content .list ul").find("li").eq(i).removeClass();
+                    return;
+                }
+            }
+        }
+    );
+    $("#address_left").click(function(){
+            for(var i=0;i<current_address.length;i++){
+                console.log("this is",current_address[i].className,i);
+                if(current_address[i].className=="li1"&&i>0){
+                    $("#address_item").animate({left:-(i-1)*900},200);
+                    $("#resummen .content .list ul").find("li.li1").prev().addClass("li1");
+                    $("#resummen .content .list ul").find("li").eq(i).removeClass();
+                    return;
+                }
+            }
+        }
+    );
+</script>
+<!--党建工作-->
+<div id="party_work">
+    <div class="content">
+        <div class="title">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-19.png" alt="">
+            <div>
+                <h1>党建工作</h1>
+                <h4>（近1000名金牌律师为您解答）</h4>
+            </div>
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-20.png" alt="">
+        </div>
+        <div class="context">
+            <div class="left">
+                <div class="list">
+                    <ul id="introduction_list_l">
+                        <li class="li1"><img src="{dede:global.cfg_templets_skin/}/images/index/index-48.png"></li>
+                        <li class=""><img src="{dede:global.cfg_templets_skin/}/images/aboutUs/about-05.png"></li>
+                        <li class=""><img src="{dede:global.cfg_templets_skin/}/images/aboutUs/about-06.png"></li>
+                    </ul>
+                </div>
+                <div class="but">
+                    <ul id="introduction_but_l">
+                        <li class="li1"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <h1>习近平出席金砖国家工商论坛并发表重要讲话-</h1>
+                <h4>中新社约翰内斯堡7月25日电 (记者 郭金超)中国国家主席习近平25日应邀出席在南非约翰内斯堡举行的金砖国家工商论坛，并发表题为《顺应时代潮流 实现共同发展》的重要讲话</h4>
+                <h3>李克强会见日本众议长大岛理森：中日应共同维护自由贸易体制</h3>
+                <h4>中新社约翰内斯堡7月25日电 (记者 郭金超)中国国家主席习近平25日应邀出席在南非约翰内斯堡举行的金砖国家工商论坛，并发表题为《顺应时代潮流 实现共同发展》的重要讲话</h4>
+                <h3>李克强会见日本众议长大岛理森：中日应共同维护自由贸易体制</h3>
+                <h4>中新社约翰内斯堡7月25日电 (记者 郭金超)中国国家主席习近平25日应邀出席在南非约翰内斯堡举行的金砖国家工商论坛，并发表题为《顺应时代潮流 实现共同发展》的重要讲话</h4>
+                <h3>李克强会见日本众议长大岛理森：中日应共同维护自由贸易体制</h3>
+                <h4>中新社约翰内斯堡7月25日电 (记者 郭金超)中国国家主席习近平25日应邀出席在南非约翰内斯堡举行的金砖国家工商论坛，并发表题为《顺应时代潮流 实现共同发展》的重要讲话</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var in_i=1;
+    function in_banndis(){
+        if(in_i>=3){
+            in_i=0;
+        }
+        $('#introduction_list_l li').removeClass("li1");
+        $('#introduction_but_l li').removeClass("li1");
+        $('#introduction_list_l li').eq(in_i).addClass("li1");
+        $('#introduction_but_l li').eq(in_i).addClass("li1");
+        in_i++;
+    }
+    var in_b = setInterval("in_banndis()",3000);
+</script>
+<!--新闻中心-->
+<div id="news">
+    <div class="content">
+        <div class="title">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-02.png" alt="">
+            <div>
+                <h1>新闻中心</h1>
+                <h4>（近1000名金牌律师为您解答）</h4>
+            </div>
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-01.png" alt="">
+        </div>
+        <div class="list">
+            <ul id="news_list">
+                {dede:arclist typeid='28' row='6' addfields='content,subtitle,time' channelid='19' flag='c' }
+                <li class="li1">
+                    <a href="[field:arcurl/]" target="_blank">
+                        <div class="news_left">
+                            <h1>[field:pubdate function="MyDate('d',@me)"/]</h1>
+                            <h4>[field:pubdate function="MyDate('Y年m月',@me)"/]</h4>
+                        </div>
+                        <div class="news_right">
+                            <h5 style="width:100%;height:30px;overflow:hidden;">[field:title/]</h5>
+                            <h6 style="width:100%;height:40px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;">[field:subtitle/]
+                            </h6>
+                        </div>
+                    </a>
+                </li>
+                {/dede:arclist}
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="news_moew">
+            <a href="/qinyuexinwen/">查看更多</a>
+    </div>
+</div>
+<!--服务物流-->
+<div id="server">
+    <div class="bg"></div>
+    <div class="list">
+        <!--<ul>-->
+            <!--<li><img src="{dede:global.cfg_templets_skin/}/images/index/index-23.png" alt=""></li>-->
+            <!--<li><img src="{dede:global.cfg_templets_skin/}/images/index/index-24.png" alt=""></li>-->
+            <!--<li><img src="{dede:global.cfg_templets_skin/}/images/index/index-23.png" alt=""></li>-->
+            <!--<li><img src="{dede:global.cfg_templets_skin/}/images/index/index-24.png" alt=""></li>-->
+        <!--</ul>-->
+        <img src="{dede:global.cfg_templets_skin/}/images/index/index-51.png" alt="">
+    </div>
+</div>
+<!--秦岳风采-->
+<div id="show">
+    <div class="content">
+        <div class="title">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-02.png" alt="">
+            <div>
+                <h1>秦岳风采</h1>
+                <h4>（近1000名金牌律师为您解答）</h4>
+            </div>
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-01.png" alt="">
+        </div>
+    </div>
+</div>
+<div id="surroundings">
+    <div class="left">
+        <img src="{dede:global.cfg_templets_skin/}/images/index/left-btn.png" alt="">
+    </div>
+   <div class="content">
+      <div class="list">
+         <ul id="surroundings_list" style="width: 5226px; left: -2806px;">
+            <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-52.png"></li>
+            <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-53.png"></li>
+            <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-54.png"></li>
+            <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-55.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-52.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-53.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-54.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-55.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-52.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-53.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-54.png"></li>
+             <li><img src="{dede:global.cfg_templets_skin/}/images/index/index-55.png"></li>
+         </ul>
+      </div>
+   </div>
+    <div class="right"><img src="{dede:global.cfg_templets_skin/}/images/index/⁬right-btn.png" alt=""></div>
+</div>
+<script>
+hj_num = $('#surroundings_list li').length;
+$('#surroundings_list').css('width',(hj_num-4)*294);
+var hj_i=1;
+function hj_banndis(){
+	  if(hj_i>=(hj_num-3)*294){
+		hj_i=0; 
+	 }
+   $('#surroundings_list').css('left',-hj_i);
+	hj_i++;
+ }
+ var hj_b = setInterval("hj_banndis()",30);
+ $("#surroundings .list").hover(function(){
+	clearInterval(hj_b);
+ },function(){
+	hj_b = setInterval("hj_banndis()",30);
+ });
+</script>
+<!--合作客户-->
+<div id="contact">
+    <div class="content">
+        <div class="title">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-02.png" alt="">
+            <div>
+                <h1>合作客户</h1>
+                <h4>（近1000名金牌律师为您解答）</h4>
+            </div>
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-01.png" alt="">
+        </div>
+        <div id="contact_list">
+            <img src="{dede:global.cfg_templets_skin/}/images/index/index-80.png" alt="">
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

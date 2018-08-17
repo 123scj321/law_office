@@ -1,0 +1,133 @@
+#wrapper{width:100%; position:relative; overflow:hidden; height:150px;}
+#wrapper #banner_img{ position:relative;}
+#wrapper #banner_img li{ float:left;}
+#wrapper #banner_img li img{width:100%;}
+#wrapper #banner_but{ position:absolute;left:37%;bottom:10px;}
+#wrapper #banner_but li{width:10px;height:10px; border-radius:50%; background:#c5c5c4; float:left; margin-left:10px;}
+
+/*泰仁数据*/
+#tr_data{ width:100%;}
+#tr_data ul{ width:100%; padding:12px 0; background:#f1efef;}
+#tr_data ul li{ float:left; width:33%; border-left:1px solid #d4d4d4; text-align:center;}
+#tr_data ul .li1{ border-left:0 solid #d4d4d4;}
+#tr_data ul li h5{ color:#a30202;font-size:0.8rem;font-family:'微软雅黑';}
+#tr_data ul li h5 span{ color:#a30202;font-size:1.2rem;font-family:'微软雅黑';}
+#tr_data ul li p{ color:#949494;font-size:0.8rem;font-family:'微软雅黑';}
+
+/*法律援助夜间*/
+#legal_aid_at{ width:100%; background:#fff;margin-top:20px;}
+#legal_aid_at .content h5{color:#000;font-size:1.2rem;font-family:'微软雅黑';text-align:center;}
+#legal_aid_at .content h6{color:#666666;font-size:0.7rem;font-family:'微软雅黑'; text-align:center; margin-top:6px; font-weight:inherit;}
+#legal_aid_at .content{ width:94%; margin:0 auto;}
+#legal_aid_at .content .textarea{  position:relative; margin-top:20px;}
+#legal_aid_at .content .textarea img{position:absolute; left:13px; top:11px; height:15px;}
+#legal_aid_at .content .textarea select{width:100%;  height:36px; outline: medium;font-family:"微软雅黑"; color:#999; font-size:0.8em; line-height:36px; text-indent:5.1em; border:1px solid #a30202; background:#fff;}
+#legal_aid_at .content .input{ margin-top:16px; position:relative;}
+#legal_aid_at .content .input img{position:absolute; left:13px; top:9px; height:15px;}
+#legal_aid_at .content .input .in_ph{ width:100%;  height:36px; outline: medium;font-family:"微软雅黑"; color:#999; font-size:0.8em; line-height:36px; text-indent:2.5em; border:1px solid #a30202;}
+#legal_aid_at .content .submit{margin-top:16px; width:101%; height:36px;  background:#a30202; outline: medium;font-family:"微软雅黑"; color:#fff; font-size:1em; line-height:36px; border:0;}
+#legal_aid_at .content p{font-family:"微软雅黑"; color:#666; font-size:0.8rem; padding-top:11px; padding-bottom:15px;}
+#legal_aid_at .content p .span2{ float:right;}
+#legal_aid_at .content p .span1{ color:#a30202; font-size:1rem; font-weight:600;}
+
+/*泰仁领域*/
+#ph_business{width:100%; }
+#ph_business h5{color:#000;font-size:1.2rem;font-family:'微软雅黑'; font-weight:inherit; text-align:center; padding-top:20px;}
+#ph_business h5 span{ font-weight:bold; color: #a30202;}
+#ph_business p{color:#666666;font-size:0.8rem;font-family:'微软雅黑'; text-align:center; margin-top:6px;}
+#ph_business ul{margin-top:12px;}
+#ph_business ul li{width:25%; float:left; text-align:center; margin-top:10px;}
+#ph_business ul li img{width:60%;}
+#ph_business ul li h4{font-size:0.8em;font-family:"微软雅黑"; color:#333; font-weight:normal; line-height:34px;}
+#ph_business .business_zx{ width:90%; margin:0 auto; position:relative; padding:16px 0 28px 0;}
+#ph_business .business_zx .business_z{position:absolute;width: 154px;height: 36px;top: 0;right: 0;}
+#ph_business .business_zx img{ width:100%;}
+
+/*法律援助*/
+#legal_aid{ width:100%; background:#222938;}
+#legal_aid img{ width:100%;}
+/*#legal_aid .content h5{color:#fff;font-size:1.2rem;font-family:'微软雅黑'; padding:16px 0;text-align:center;}
+#legal_aid .content{ width:94%; margin:0 auto;}
+#legal_aid .content .textarea{  position:relative;}
+#legal_aid .content .textarea img{position:absolute; left:13px; top:9px; height:15px;}
+#legal_aid .content .textarea textarea{ width:100%; height:86px;outline: medium;font-family:"微软雅黑"; color:#000; font-size:0.8em; line-height:2.5em; text-indent:2.5em;}
+#legal_aid .content .input{ margin-top:16px; position:relative;}
+#legal_aid .content .input img{position:absolute; left:13px; top:14px; height:15px;}
+#legal_aid .content .input .in_ph{ width:100%;  height:36px; outline: medium;font-family:"微软雅黑"; color:#000; font-size:0.8em; line-height:36px; text-indent:2.5em;}
+#legal_aid .content .submit{margin-top:16px; width:101%; height:36px;  background:#f8904e; outline: medium;font-family:"微软雅黑"; color:#fff; font-size:1em; line-height:36px; border:0;}
+#legal_aid .content p{font-family:"微软雅黑"; color:#fff; font-size:0.8em; padding-top:10px; padding-bottom:14px; text-align:center;}
+*/
+
+/*泰仁律师团队样式*/
+#tr_team{ width:100%;}
+#tr_team .content{width:100%; margin:0 auto;}
+#tr_team .content .ca_words{ text-align:center;}
+#tr_team .content .ca_words h5{color:#000;font-size:1.2rem;font-family:'微软雅黑'; font-weight:inherit; text-align:center; margin-top:20px;}
+#tr_team .content .ca_words h5 span{ font-weight:bold;color:#a30202;}
+#tr_team .content .ca_words p{color:#666666;font-size:0.8rem;font-family:'微软雅黑'; text-align:center; margin-top:6px;}
+#tr_team .content .team_list{ margin-top:20px;position:relative; }
+#tr_team .content .team_list ul{ width:100%;}
+#tr_team .content .team_list ul li{ border-top:1px solid #e2e2e2; padding:14px 0; float:left;}
+#tr_team .content .team_list ul li .left{ float:left; width:28%; position:relative; margin-left:3%;}
+#tr_team .content .team_list ul li .left p{ text-align:center; width:100%; position:absolute; bottom:0px; line-height:26px; height:26px;background: rgba(0, 0, 0, 0.7);color:#fff;font-size:0.5rem;font-family:'微软雅黑';}
+#tr_team .content .team_list ul li .left p span{ font-size:0.9rem;}
+#tr_team .content .team_list ul li .left img{ width:100%;}
+#tr_team .content .team_list ul li .right{ float:right; width:60%;margin-right:3%;}
+#tr_team .content .team_list ul li .right h6{color:#000;font-size:1rem;font-family:'微软雅黑';}
+#tr_team .content .team_list ul li .right h6 img{ height:13px; margin-left:8px;}
+#tr_team .content .team_list ul li .right p{color:#666;font-size:0.6rem;font-family:'微软雅黑'; padding:9px 0; height:43px;}
+#tr_team .content .team_list ul li .right .zx img{ width:88px; margin-right:20px;}
+#tr_team .content .but{ width:100%;border-top:1px solid #e2e2e2; text-align:center; padding:18px 0 20px 0;}
+#tr_team .content .but .swiper-pagination{ display:inline-block;margin-left: -30px;}
+#tr_team .content .but .swiper-pagination .swiper-pagination-bullet{ float:left; width:10px; height:10px;border-radius:50%; background:#cdcdcd; margin-right:10px;}
+#tr_team .content .but .swiper-pagination .swiper-pagination-bullet-active{  background:#a30202; }
+
+
+/*最新咨询*/
+#latest_consultation{ width:100%; background:#f1efef;}
+#latest_consultation .content{width:94%; margin:0 auto;}
+#latest_consultation .content .ca_words{ text-align:center; }
+#latest_consultation .content .ca_words h5{color:#000;font-size:1.2rem;font-family:'微软雅黑'; font-weight:inherit; text-align:center; padding-top:20px;}
+#latest_consultation .content .ca_words h5 span{ font-weight:bold;color:#a30202}
+#latest_consultation .content .ca_words p{color:#666666;font-size:0.8rem;font-family:'微软雅黑'; text-align:center; margin-top:6px;}
+#latest_consultation .content .zx_list ul{ padding:8px 0 30px 0;}
+#latest_consultation .content .zx_list ul li{ width:100%;  border-bottom:1px solid #cbcbcb;}
+#latest_consultation .content .zx_list ul li p{font-family:"微软雅黑"; font-size:0.8em; color:#000; line-height:46px;}
+#latest_consultation .content .zx_list ul li p span{color:#a30202;}
+#latest_consultation .content .zx_list ul li p img{ float:right; height:18px; margin-top:14px;}
+
+
+/*服务保障*/
+#guarantee{ width:100%;}
+#guarantee img{width:100%;}
+
+/*成功案例*/
+#case{width:100%; background: url(../image/index_al_bj.png); background-size: 100% 100%; padding-bottom:30px; margin-top:48px;}
+#case .content{width:94%; margin:0 auto;}
+#case .content h5{color:#fff;font-size:1.2rem;font-family:'微软雅黑';  text-align:center; padding-top:20px;}
+#case .content p{color:#fff;font-size:0.8rem;font-family:'微软雅黑'; text-align:center; margin-top:6px;}
+#case .content .but_list{ padding:20px 0 16px 0;}
+#case .content .but_list ul li{ width:26%; float:left; margin-left:5.5%; position:relative;}
+#case .content .but_list ul li img{ width:100%;}
+#case .content .but_list ul li p{ text-align:center; width:100%; position:absolute; top:0;font-family:"微软雅黑"; font-size:0.9em; color:#fff; line-height:12px;}
+#case .content .list_tr{ width:100%;}
+#case .content .service_list{ width:100%; display:none;}
+#case .content .service_list img{ width:100%;}
+#case .content .ccase_list{ width:100%; display:none; background:#fff;height:407px;}
+#case .content .ccase_list ul{ width:94%; margin:0 auto;padding-top:14px;}
+#case .content .ccase_list ul li{ padding-bottom:10px; border-bottom:1px solid #d3d3d3;}
+#case .content .ccase_list ul li h6{color:#000;font-size:0.8rem;font-family:'微软雅黑'; line-height:22px; margin-top:2px;}
+#case .content .ccase_list ul li h6 span{color:#a30202;}
+#case .content .ccase_list ul li h4{color:#666;font-size:0.7rem;font-family:'微软雅黑'; font-weight:inherit; padding-left:6px;}
+#case .content .ccase_list .m_al{width:100%; text-align:center; padding:10px 0;}
+#case .content .ccase_list .m_al img{ height:24px;}
+
+#case .content .team_listv{ width:100%;}
+#case .content .team_listv img{ width:100%;}
+
+
+
+/*服务流程样式*/
+#service{ width:100%;}
+#service img{ width:100%;}
+/*服务流程样式完*/

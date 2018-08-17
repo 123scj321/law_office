@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0025)http://m.tairenlvshi.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="./js/iscroll.js"></script>
+
+    <title>秦岳律师事务所_在线律师咨询_免费法律咨询</title>
+</head>
+
+<body class=" KSMBCHAT-FULL-BODY">
+<!--header-->
+<header>
+</header>
+<script>
+    $.get("./header.html", function(result){
+        $("header").html(result);
+    });
+</script>
+<!--end header-->
+<!--banner-->
+<div id="wrapper" style="overflow: hidden; height: 160px;">
+    <ul id="banner_img" style="width: 1600px; transform-origin: 0px 0px 0px; position: absolute; top: 0px; left: 0px;">
+        <li style="width: 400px;"><a href="#"><img src="./images/banner/banner-1.jpg"></a></li>
+        <li style="width: 400px;"><a href="#"><img src="./images/banner/banner-2.jpg"></a></li>
+        <li style="width: 400px;"><a href="#"><img src="./images/banner/banner-3.jpg"></a></li>
+        <li style="width: 400px;"><a href="#"><img src="./images/banner/banner-4.jpg"></a></li>
+    </ul>
+    <div class="but">
+        <ul id="banner_but">
+            <li style="background: rgb(183, 125, 0);"><a href="javascript:void(0);"></a></li>
+            <li style="background: rgb(197, 197, 196);"><a href="javascript:void(0);"></a></li>
+            <li style="background: rgb(197, 197, 196);"><a href="javascript:void(0);"></a></li>
+            <li style="background: rgb(197, 197, 196);"><a href="javascript:void(0);"></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function (){
+        if($("#banner_img li").eq(0).find('img').css("height")=='0px'){
+
+        }else{
+            $("#wrapper").css("height",$("#banner_img li").eq(0).find('img').css("height"));
+        }
+    });
+    banner_n = $("#banner_img li").length;
+    bor_w = $(window).width();
+    $("#banner_img").css('width',banner_n*bor_w);
+    $("#banner_img li").css('width',bor_w);
+    var Scroll = new iScroll('wrapper',{hScrollbar:false, vScrollbar:false,vScroll: false});
+    /*第一参数必需是滑动元素的父元素的id。
+    主要参数一览：
+    hScroll: true, 左右滑动，默认为true
+    vScroll: true,上下滑动
+    hScrollbar: true, 是否显示y轴滚动条，默认为显示
+    vScrollbar: true,是否显示X轴滚动条，默认为显示*/
+    $("#banner_but li").eq(0).css("background","#b77d00");
+    var i=1;
+    function banndis(){
+        if(i>=banner_n){
+            i=0;
+        }
+        $("#banner_img").css("left",-i*bor_w);
+        $("#banner_but li").css("background","#c5c5c4");
+        $("#banner_but li").eq(i).css("background","#b77d00");
+        i++;
+    }
+    var tr_b = setInterval("banndis()",4000);
+    function banndis_t(){
+        ii_left = $("#banner_img").position().left;
+        ii_left = Math.abs(ii_left);
+        ii = ii_left/bor_w;
+        ii=Math.floor(ii)
+        $("#banner_but li").css("background","#");
+        $("#banner_but li").eq(ii).css("background","#b77d00");
+    }
+    var tr_t = setInterval("banndis_t()",100);
+</script>
+<!--banner结束-->
+<!--泰仁数据-->
+<div id="tr_data">
+    <ul>
+        <li>
+            <h5><span id="l_satisfaction">99.1</span>%</h5>
+            <p>客户服务满意度</p>
+        </li>
+        <li class="li1">
+            <h5><span id="l_problem">1000</span>名+</h5>
+            <p>资深律师团队</p>
+        </li>
+        <li>
+            <h5><span id="l_loss">9000</span>+</h5>
+            <p>案件证明办案实力</p>
+        </li>
+        <div class="clear"></div>
+    </ul>
+
+</div>
+<script>
+    var problem_i=1;
+    function l_problem(){
+        if(problem_i>=1000){
+            problem_i=1000;
+        }
+        $('#l_problem').text(problem_i);
+        problem_i+=50;
+    }
+    var l_proble= setInterval("l_problem()",7);
+
+    var satisfaction_i=1;
+    function l_satisfaction(){
+        if(satisfaction_i>=99.1){
+            satisfaction_i=99.1;
+        }
+        $('#l_satisfaction').text(satisfaction_i);
+        satisfaction_i++;
+    }
+    var l_satisfactio= setInterval("l_satisfaction()",15);
+
+    var loss_i=1;
+    function l_los(){
+        if(loss_i>=9000){
+            loss_i=9000;
+        }
+        $('#l_loss').text(loss_i);
+        loss_i+=100;
+    }
+    var l_loss= setInterval("l_los()",93);
+</script>
+<!--泰仁数据结束-->
+<!--类型-->
+<div id="ph_business">
+    <h5><span>业务</span>领域</h5>
+    <p>涵盖7大业务领域，超100项法律服务</p>
+    <ul>
+        <li>
+            <a href="#106.html">
+                <img src="./images/index/index_ht.png">
+                <h4>交通事故</h4>
+            </a>
+        </li>
+        <li>
+            <a href="#110.html">
+                <img src="./images/index/index_xs.png">
+                <h4>工伤赔偿</h4>
+            </a>
+        </li>
+        <li>
+            <a href="#108.html">
+                <img src="./images/index/index_lh.png">
+                <h4>债务合同</h4>
+            </a>
+        </li>
+        <li>
+            <a href="#107.html">
+                <img src="./images/index/index_jt.png">
+                <h4>婚姻家庭</h4>
+            </a>
+        </li>
+        <li>
+            <a href="#104.html">
+                <img src="./images/index/index_cc.png">
+                <h4>刑事辩护</h4>
+            </a>
+        </li>
+        <li>
+            <a href="#112.html">
+                <img src="./images/index/index_fc.png">
+                <h4>房产纠纷</h4>
+            </a>
+        </li>
+        <li>
+            <a href="#109.html">
+                <img src="./images/index/index_sh.png">
+                <h4>物业纠纷</h4>
+            </a>
+        </li>
+        <li>
+            <a href="#cas=44758___154490&amp;fi=48067">
+                <img src="./images/index/index_qt.png">
+                <h4>法律顾问</h4>
+            </a>
+        </li>
+        <div class="clear"></div>
+    </ul>
+</div>
+<!--领域结束-->
+<!--法律援助-->
+<div id="legal_aid">
+    <a href="#"> <img src="./images/banner/about_01.jpg"></a>
+</div>
+<script>
+    function button_l(){
+        var phone = $("#phone").val();
+        var content_zx = $("#content_zx").val();
+        if(phone && content_zx){
+            $.post("/index/submit.html",{phone:phone,content_zx:content_zx},function(data,status){
+                if(data==1){
+                    alert('提交成功，泰仁律师稍后联系您！');
+                    window.location.reload();//刷新当前页面.
+                }else{
+                    alert('提交失败，请重新提交！');
+                }
+            });
+        }else{
+            alert('请填写你的咨询内容或电话号码！');
+
+        }
+    }
+
+</script>
+<!--法律援助结束-->
+<!--泰仁团队-->
+<div id="tr_team">
+    <div class="content">
+        <div class="ca_words">
+            <h5><span>推荐</span>律师</h5>
+            <p>358名金牌律师为您解答</p>
+        </div>
+        <div class="team_list">
+            <ul>
+                <div class="swiper-container swiper-container-horizontal swiper-container-android">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-active" style="width: 400px;">
+                            <li>
+                                <a href="">
+                                    <div class="left">
+                                        <img src="./images/index/599d476e65fc4.jpg">
+                                        <p>已成功办理<span>965</span>件</p>
+                                    </div>
+                                </a>
+                                <div class="right">
+                                    <a href="">
+                                        <h6>瞿政</h6>
+                                        <p>中国政法法学硕士，11年司法经验，代理刑事案件无数，胜诉率高。</p>
+                                    </a>
+                                    <div class="zx">
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_zx.png">
+                                        </a>
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_dh.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="left">
+                                        <img src="./images/index/599d476e65fc4.jpg">
+                                        <p>已成功办理<span>965</span>件</p>
+                                    </div>
+                                </a>
+                                <div class="right">
+                                    <a href="">
+                                        <h6>瞿政</h6>
+                                        <p>中国政法法学硕士，11年司法经验，代理刑事案件无数，胜诉率高。</p>
+                                    </a>
+                                    <div class="zx">
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_zx.png">
+                                        </a>
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_dh.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="left">
+                                        <img src="./images/index/599d476e65fc4.jpg">
+                                        <p>已成功办理<span>965</span>件</p>
+                                    </div>
+                                </a>
+                                <div class="right">
+                                    <a href="">
+                                        <h6>瞿政</h6>
+                                        <p>中国政法法学硕士，11年司法经验，代理刑事案件无数，胜诉率高。</p>
+                                    </a>
+                                    <div class="zx">
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_zx.png">
+                                        </a>
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_dh.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="left">
+                                        <img src="./images/index/599d476e65fc4.jpg">
+                                        <p>已成功办理<span>965</span>件</p>
+                                    </div>
+                                </a>
+                                <div class="right">
+                                    <a href="">
+                                        <h6>瞿政</h6>
+                                        <p>中国政法法学硕士，11年司法经验，代理刑事案件无数，胜诉率高。</p>
+                                    </a>
+                                    <div class="zx">
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_zx.png">
+                                        </a>
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_dh.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="left">
+                                        <img src="./images/index/599d476e65fc4.jpg">
+                                        <p>已成功办理<span>965</span>件</p>
+                                    </div>
+                                </a>
+                                <div class="right">
+                                    <a href="">
+                                        <h6>瞿政</h6>
+                                        <p>中国政法法学硕士，11年司法经验，代理刑事案件无数，胜诉率高。</p>
+                                    </a>
+                                    <div class="zx">
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_zx.png">
+                                        </a>
+                                        <a href="#cas=44758___154490&amp;fi=48067">
+                                            <img src="./images/index/lawyer_dh.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="./js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true
+            });
+        </script>
+    </div>
+</div>
+<!--服务保障-->
+<div id="guarantee">
+    <img src="./images/index/service.png">
+</div>
+<!--服务保障结束-->
+
+<!--服务流程-->
+<div id="service">
+    <a href="tel:400-809-0059">
+        <img src="./images/index/tr_l_phone.png">
+    </a>
+</div>
+
+<!--服务流程结束-->
+<!--footer-->
+<footer></footer>
+<script>
+    $.get("./footer.html", function(result){
+        $("footer").html(result);
+    });
+</script>
+
+<!--end footer-->
+</body>
+</html>

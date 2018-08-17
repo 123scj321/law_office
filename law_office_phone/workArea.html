@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0051)#business/index/id/106.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/business_ht.css">
+    <script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="./js/iscroll.js"></script>
+    <title>泰仁律师事务所_在线律师咨询_免费法律咨询</title>
+</head>
+
+<body class=" KSMBCHAT-FULL-BODY">
+<div id="ph_header">
+    <img src="./images/index/header.png">
+    <div id="h_but_trt" style="position:absolute; top:10px; right:3%; text-align:center;">
+        <img style=" height:24px;" src="./images/index/xlxx.png">
+    </div>
+    <script>
+        $('#h_but_trt').click(function(){
+            if($('#pop_up_tr').css('display')=='none'){
+                $('#pop_up_tr').show(300);
+            }else{
+                $('#pop_up_tr').hide(200);
+            }
+
+        });
+    </script>
+    <script>
+        function dh(){
+            var phone_url = $("#select_k1").val();
+            window.location.href=phone_url;
+        }
+
+    </script>
+</div>
+<div style=" height:44px;"></div>
+<!--弹出层1-->
+<div id="pop_up_trls">
+    <div class="content">
+        <h4>立即获取相关案例<img onclick="pop_lp_trlst()" src="./images/index/tu_gb.png"></h4>
+        <ul>
+            <form action="#business/index/id/106.html" enctype="multipart/form-data" method="post" id="formid">
+                <li><span>类型：</span><select name="select" id="select_k1" class="xla_k">
+                    <option value="106">合同纠纷</option>
+                    <option value="110">刑事辩护</option>
+                    <option value="108">离婚诉讼</option>
+                    <option value="107">交通事故</option>
+                    <option value="104">财产纠纷</option>
+                    <option value="112">房产纠纷</option>
+                    <option value="109">损害赔偿</option>
+                    <option value="1">其他</option>
+                </select></li>
+                <li><span>电话：</span><input type="text" onchange="dh1()" name="phone" id="phone1" value=""></li>
+            </form></ul>
+        <script>
+            function dh1(){
+                var phone1 = $("#phone1").val();
+                if(phone1 && /^1[3|4|5|7|8]\d{9}$/.test(phone1)){
+                }else{
+                    alert("*请输入正确号码");
+                    $("#phone1").val(null);
+                    $("#phone1")[0].focus();
+                }
+            }
+        </script>
+
+        <div class="up_but" onclick="button_lt()"><img src="./images/index/tc_but.png"></div>
+    </div>
+</div>
+<script>
+    function pop_lp_trls(){
+        $('#pop_up_trls').show(200);
+    }
+    function pop_lp_trlst(){
+        $('#pop_up_trls').hide(200);
+    }
+</script>
+<script>
+    function button_lt(){
+        var phone1 = $("#phone1").val();
+        var select_k1 = $("#select_k1").val();
+        if(phone1 && select_k1){
+            $.post("/index/submit.html",{phone:phone1,field:select_k1},function(data,status){
+                if(data==1){
+                    alert('提交成功，泰仁律师稍后联系您！');
+                    window.location.reload();//刷新当前页面.
+                }else{
+                    alert('提交失败，请重新提交！');
+                }
+            });
+        }else{
+            alert('请填写你的咨询内容或电话号码！');
+
+        }
+    }
+
+</script>
+<!--弹出层1结束-->
+<!--弹出层-->
+<div id="pop_up_tr" onclick="dh_tc()">
+    <div class="content_tr">
+        <div class="title_list">
+            <ul>
+                <li class="li1">
+                    <a href="./index.html">
+                        <img src="./index_files/bu_1.jpg">
+                        <p>网站首页</p>
+                    </a>
+                </li>
+                <li class="li2">
+                    <a href="about.html">
+                        <img src="./index_files/bu_2.jpg">
+                        <p>关于秦岳</p>
+                    </a>
+                </li>
+                <li class="li3">
+                    <a href="lawyerGroup.html">
+                        <img src="./index_files/bu_3.jpg">
+                        <p>秦岳团队</p>
+                    </a>
+                </li>
+                <li class="li4">
+                    <a href="case.html">
+                        <img src="./index_files/bu_4.jpg">
+                        <p>诉讼案例</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./index_files/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./index_files/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./index_files/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <h5>业务领域</h5>
+        <div class="ly_list">
+            <ul>
+                <li><a href="#106.html">
+                    <img src="./index_files/bu_6.jpg">
+                    <p>合同纠纷</p>
+                </a></li>
+                <li class="li1"><a href="#110.html">
+                    <img src="./index_files/bu_7.jpg">
+                    <p>刑事辩护</p>
+                </a></li>
+                <li><a href="#108.html">
+                    <img src="./index_files/bu_8.jpg">
+                    <p>离婚诉讼</p>
+                </a></li>
+                <li><a href="#107.html">
+                    <img src="./index_files/bu_9.jpg">
+                    <p>交通事故</p>
+                </a></li>
+                <li class="li1"><a href="#104.html">
+                    <img src="./index_files/bu_10.jpg">
+                    <p>财产纠纷</p>
+                </a></li>
+                <li><a href="#112.html">
+                    <img src="./index_files/bu_11.jpg">
+                    <p>房产纠纷</p>
+                </a></li>
+                <li><a href="#109.html">
+                    <img src="./index_files/bu_12.jpg">
+                    <p>损害赔偿</p>
+                </a></li>
+                <li class="li1"><a href="#105.html">
+                    <img src="./index_files/bu_13.jpg">
+                    <p>毒品犯罪</p>
+                </a></li>
+                <li><a href="#135.html">
+                    <img src="./index_files/bu_14.jpg">
+                    <p>法律顾问</p>
+                </a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--弹出层结束-->
+<script>
+    function dh_tc(){
+        $('#pop_up_tr').hide(200);
+    }
+
+</script>
+
+<!--banner-->
+<div id="ph_banner">
+    <a href="#cas=44758___154490&amp;fi=48067"><img src="./images/index/banner_ht.jpg"></a>
+</div>
+<!--banner结束-->
+
+
+<!--泰仁团队-->
+<div id="tr_team">
+    <div class="content">
+        <div class="ca_words">
+            <h5><span>推荐</span>律师</h5>
+            <p></p>
+        </div>
+        <div class="team_list">
+            <ul>
+                <div class="swiper-container swiper-container-horizontal swiper-container-android">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-active" style="width: 400px;">
+                            <li><a href="#cas=44758___154490&amp;fi=48067">
+                                <div class="img_tr">
+                                    <img src="./images/index/599f9c35b4161.jpg">
+                                    <p>周光发<span>执业15年</span></p>
+                                </div>
+                                <h6>理工大学副教授，曾任某商务局副局长，担任多家集团型公司法律顾问</h6></a>
+                                <div class="but_t"><a class="a1" href="#cas=44758___154490&amp;fi=48067">免费预约</a><a class="a2" href="#cas=44758___154490&amp;fi=48067">立即咨询</a></div>
+                            </li><li><a href="#cas=44758___154490&amp;fi=48067">
+                            <div class="img_tr">
+                                <img src="./images/index/599e8417cd84b.jpg">
+                                <p>黄永华<span>执业15年</span></p>
+                            </div>
+                            <h6>中国政法大学法学硕士，退休法官，现为泰仁律师事务所主办律师</h6></a>
+                            <div class="but_t"><a class="a1" href="#cas=44758___154490&amp;fi=48067">免费预约</a><a class="a2" href="#cas=44758___154490&amp;fi=48067">立即咨询</a></div>
+                        </li>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 400px;">
+                            <li><a href="#cas=44758___154490&amp;fi=48067">
+                                <div class="img_tr">
+                                    <img src="./images/index/599d48239c22e.jpg">
+                                    <p>李宝平<span>执业16年</span></p>
+                                </div>
+                                <h6>西南政法大学本科学历，从事律师工作15年，泰仁律师事务所主办律师</h6></a>
+                                <div class="but_t"><a class="a1" href="#cas=44758___154490&amp;fi=48067">免费预约</a><a class="a2" href="#cas=44758___154490&amp;fi=48067">立即咨询</a></div>
+                            </li><li><a href="#cas=44758___154490&amp;fi=48067">
+                            <div class="img_tr">
+                                <img src="./images/index/599d492418c9a.jpg">
+                                <p>陈林律师<span>执业4年</span></p>
+                            </div>
+                            <h6>法学本科毕业，法学功底深厚，擅长处理合同纠纷、婚姻家庭等案件。</h6></a>
+                            <div class="but_t"><a class="a1" href="#cas=44758___154490&amp;fi=48067">免费预约</a><a class="a2" href="#cas=44758___154490&amp;fi=48067">立即咨询</a></div>
+                        </li>
+                        </div>
+                        <div class="swiper-slide" style="width: 400px;">
+                            <li><a href="#cas=44758___154490&amp;fi=48067">
+                                <div class="img_tr">
+                                    <img src="./images/index/599d4a6a8a797.jpg">
+                                    <p>洪伟律师<span>执业8年</span></p>
+                                </div>
+                                <h6>执业于泰仁律师事务所，曾代理过的案件当事人均表示高度的赞许。</h6></a>
+                                <div class="but_t"><a class="a1" href="#cas=44758___154490&amp;fi=48067">免费预约</a><a class="a2" href="#cas=44758___154490&amp;fi=48067">立即咨询</a></div>
+                            </li><li><a href="#cas=44758___154490&amp;fi=48067">
+                            <div class="img_tr">
+                                <img src="./images/index/599e3071ebac4.jpg">
+                                <p>唐小明律师<span>执业5年</span></p>
+                            </div>
+                            <h6>北京大学法学硕士，曾在某司法局工作，现为泰仁律师事务所主办律师</h6></a>
+                            <div class="but_t"><a class="a1" href="#cas=44758___154490&amp;fi=48067">免费预约</a><a class="a2" href="#cas=44758___154490&amp;fi=48067">立即咨询</a></div>
+                        </li>
+                        </div>
+                    </div>
+                </div></ul>
+            <!-- Add Pagination -->
+            <div class="but">
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="./js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true
+            });
+        </script>
+    </div>
+</div>
+
+<!--泰仁团队结束-->
+
+<!--热门咨询-->
+<div id="t_advisory">
+    <div class="content">
+        <div class="ca_words">
+            <h5><span>热门</span>咨询</h5>
+        </div>
+        <div class="list_but">
+            <ul id="ad_tr_but">
+                <li class="li1">合同纠纷</li>
+                <li>合同审查</li>
+                <li>合同违约金</li>
+            </ul>
+        </div>
+        <div class="list_lb">
+            <ul id="ad_tr_list">
+                <li style="display: block;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>买卖合同纠纷如果解决？<span class="span2">在线咨询</span></a></li>
+                <li style="display: block;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>购房合同纠纷如何解决？<span class="span2">在线咨询</span></a></li>
+                <li style="display: block;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>公司合同纠纷怎么解决？<span class="span2">在线咨询</span></a></li>
+                <li style="display: none;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>律师审查合同怎么收费? <span class="span2">在线咨询</span></a></li>
+                <li style="display: none;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>签订合同要注意什么？<span class="span2">在线咨询</span></a></li>
+                <li style="display: none;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>合同模板免费下载地址？<span class="span2">在线咨询</span></a></li>
+                <li style="display: none;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>合同违约金怎么赔偿？<span class="span2">在线咨询</span></a></li>
+                <li style="display: none;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>对方违约如何收集证据？<span class="span2">在线咨询</span></a></li>
+                <li style="display: none;"><a href="#cas=44758___154490&amp;fi=48067"><span class="span1"></span>合同违约赔偿的法律依据？<span class="span2">在线咨询</span></a></li>
+            </ul>
+        </div>
+        <div class="zx_but"><a href="#cas=44758___154490&amp;fi=48067"><img src="./images/index/ht_zx.jpg"></a></div>
+    </div>
+</div>
+<!--热门咨询结束-->
+<script>
+    $('#ad_tr_list li').css('display','none');
+    for(iy=0;iy<3;iy++){
+        $('#ad_tr_list li').eq(iy).css('display','block');
+    }
+    $('#ad_tr_but li').click(function(){
+        $('#ad_tr_but li').removeClass("li1");
+        $(this).addClass("li1");
+        io=$(this).index();
+        $('#ad_tr_list li').css('display','none');
+        for(iy=io*3;iy<(io+1)*3;iy++){
+            $('#ad_tr_list li').eq(iy).css('display','block');
+        }
+    });
+
+</script>
+<!--为什么选择我们-->
+<div id="select_m">
+    <img src="./images/index/ht_xzwm.jpg">
+</div>
+<!--为什么选择我们结束-->
+
+<!--案例-->
+<div id="case_list">
+    <div class="content">
+        <div class="ca_words">
+            <h5><span>成功</span>案例</h5>
+            <p></p>
+        </div>
+        <div class="al_list">
+            <ul>
+                <li><a href="#case/content/id/299.html">
+                    <h5>没有合同关系，其利益仍然应当得到保护</h5>
+                    <h6>时间：2017-09-04<span>来源：泰仁律师事务所</span><span>浏览量：4944</span></h6>
+                    <p>2011年2月13日，甲公司就“XX大厦”的建设与建工集团签订《施工合同》后，建工集团随即与王某签订《内部承包合同》，将《施工合同》约定建工集团应当履行的义务转给王某。</p>
+                </a></li><li><a href="#case/content/id/297.html">
+                <h5>泰仁帮被告挽回损失追回房产</h5>
+                <h6>时间：2017-08-29<span>来源：泰仁律师事务所</span><span>浏览量：2782</span></h6>
+                <p>夏某与陈某于ＸＸＸＸ年农历Ｘ月份自由恋爱，××××年××月××日办理结婚登记，由于双方婚前缺乏了解，婚后性格不合，经常因生活中的一些琐事发生争执，相互谩骂殴打，致使感情破裂，无法共同生活。</p>
+            </a></li><li><a href="#case/content/id/294.html">
+                <h5>泰仁帮忙追回百万余元借款</h5>
+                <h6>时间：2017-08-29<span>来源：泰仁律师事务所</span><span>浏览量：2743</span></h6>
+                <p>原告A为贷款公司，2012年10月22日，原告A公司与被告B公司签订了一份《借款合同》，约定被告B公司向原告A公司借款人民币500万元用于流动资金周转。</p>
+            </a></li>         </ul>
+        </div>
+        <div class="more"><a href="#case/index.html"><img src="./images/index/ht_mal.jpg"></a></div>
+    </div>
+</div>
+<!--案例结束-->
+<!--优势-->
+<div id="advantage">
+    <div class="content">
+        <div class="ca_words">
+            <h5><span>泰仁</span>优势</h5>
+            <p></p>
+        </div>
+        <div class="ys_list">
+            <ul>
+                <li>
+                    <img src="./images/index/ht_ys1.jpg">
+                    <p>团队化办案</p>
+                </li>
+                <li>
+                    <img src="./images/index/ht_ys2.jpg">
+                    <p>300余专业律师团队</p>
+                </li>
+                <li>
+                    <img src="./images/index/ht_ys3.jpg">
+                    <p>11年专注法律服务</p>
+                </li>
+                <li>
+                    <img src="./images/index/ht_ys4.jpg">
+                    <p>价格透明</p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--优势结束-->
+<!--咨询流程-->
+<div id="advisory_lc">
+    <a href="#cas=44758___154490&amp;fi=48067"><img src="./images/index/ht_lczx.jpg"></a>
+</div>
+<!--咨询流程结束-->
+
+<!--服务流程-->
+<div id="service">
+    <img src="./images/index/tr_l_phone.png">
+</div>
+
+<!--服务流程结束-->
+
+<!--尾部按钮-->
+<div style=" height:44px;"></div>
+<div id="footer">
+    <ul>
+        <li id="h_but_tr"><a href="javascript:void(0);">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/index_nav.png"></div>
+                <div class="p"><p>网站导航</p></div>
+            </div>
+        </a></li>
+        <li class="li1"><a href="tel:400-809-0059">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/index_ph.png"></div>
+                <div class="p"><p>立即通话</p></div>
+                <div id="shake1" class="zx_liang" style="top: 6px;"><p class="liu_jin_tr">24</p></div>
+            </div>
+        </a></li>
+        <li class="li2"><a href="#cas=44758___154490&amp;fi=48067">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/in_dx.png"></div>
+                <div class="p"><p>免费咨询</p></div>
+                <div id="shake2" class="zx_liang" style="top: 6px;"><p class="liu_jin_trls">16</p></div>
+            </div>
+        </a></li>
+    </ul>
+</div>
+
+<!--尾部按钮结束-->
+<script>
+    $('#h_but_tr').click(function(){
+        if($('#pop_up_tr').css('display')=='none'){
+            $('#pop_up_tr').show(300);
+        }else{
+            $('#pop_up_tr').hide(200);
+        }
+
+    });
+    function shake1(o){
+        var $panel = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $panel.animate({top:10},50);
+            $panel.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd1 = setInterval("shake1('shake1')",4000);
+
+    function shake2(o){
+        var $pane2 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane2.animate({top:10},50);
+            $pane2.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd2 = setInterval("shake2('shake2')",5000);
+
+    function shake3(o){
+        var $pane3 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane3.animate({top:58},50);
+            $pane3.animate({top:52},50);
+        }
+    }
+    var liu_jin_tr_dd3 = setInterval("shake3('shake3')",4000);
+
+    function zx_l_l(){
+        numtr =getRandom(15,30);
+        $('.liu_jin_tr').text(numtr);
+    }
+    var liu_jin_tr = setInterval("zx_l_l()",4000);
+
+    function zx_l_tl(){
+        numrtls =getRandom(10,25);
+        $('.liu_jin_trls').text(numrtls);
+    }
+    var liu_jin_trls = setInterval("zx_l_tl()",5000);
+
+    function getRandom(min,max){
+        var x = max;
+        var y = min;
+        if(x<y){
+            x=min;
+            y=max;
+        }
+        var rand = parseInt(Math.random() * (x - y + 1) + y);
+        return rand;
+    }
+
+</script>
+</body>
+</html>

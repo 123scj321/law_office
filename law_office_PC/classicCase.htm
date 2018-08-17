@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0027)http://www.tairenlvshi.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>秦岳律师事务所_经典案例_咨询_免费法律咨询</title>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/public.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/classicCase.css">
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.js"></script>
+    <style>
+        #list_team .content .title_but_list ul li li2{background:#de6e6e;color:#fff;width:130px; height:30px;  border-radius:50px; text-align:center; line-height:30px; display:block;}
+    </style>
+</head>
+<body ondragstart="return false">
+{dede:include filename="header.htm"/}
+<div id="banner_case"></div>
+<div id="list_team">
+    <div class="content">
+        <h5>CLASSIC CASES<span>经典案例</span></h5>
+        <div class="title_but_list">
+            <ul>
+                {dede:channel currentstyle="<li><a href='~typelink~' class='li2'>~typename~</a></li>"}
+                <li><a href='[field:typeurl/]'>[field:typename/]</a></li>{/dede:channel}
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                {dede:list addfields='dede_times,dede_subtitle' row='14' channelid='17'}
+                <li >
+                    <a href="[field:arcurl/]">
+                        <div class="left">
+                            <p><img src="[field:picname/]" alt=""></p>
+                            <p class="text_cover"><span>工商<br>赔偿</span></p>
+                        </div>
+                        <div class="right">
+                            <h6>[field:title/]</h6>
+                            <p>【[field:pubdate function="MyDate('Y-m-d',@me)"/]】</p>
+                            <h4 style="width:98%;height:40px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;">
+                                [field:dede_subtitle/]
+                            </h4>
+                        </div>
+                    </a>
+                </li>
+                {/dede:list}
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="paging_lf_trls">
+            <ul>
+               {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+            </ul>
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

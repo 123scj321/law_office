@@ -1,0 +1,29 @@
+
+#list_team{width:100%;}
+#list_team .content{ width:1200px; margin:0 auto;}
+#list_team .content h5{font-size:40px; color:#a30202; font-family:'微软雅黑'; text-align:center; padding-top:40px; padding-bottom:20px;border-bottom: 2px solid #ededed;}
+#list_team .content h5 span{font-size:38px; color:#a30202; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;padding-left:20px;}
+#list_team .content .title_but_list{ margin-top:20px;}
+#list_team .content .title_but_list ul li{ float:left; width:130px; height:30px; border:2px solid #5599ff; margin-left:18.2px; border-radius:50px; text-align:center; line-height:30px; }
+#list_team .content .title_but_list ul .li1{ margin-left:0px;}
+#list_team .content .title_but_list ul li:hover{ background:#5599ff;}
+#list_team .content .title_but_list ul .li2{ background:#5599ff;}
+#list_team .content .title_but_list ul li a{font-size:16px; color:#5599ff; font-family:'微软雅黑';}
+#list_team .content .title_but_list ul li:hover a{color:#fff;}
+#list_team .content .title_but_list ul .li2 a{color:#fff;}
+#list_team .content .title_td_list{ margin-top:50px;}
+#list_team .content .title_td_list ul li{ width:100%; height:225px; background:#f4f4f4;  margin-top:30px;}
+#list_team .content .title_td_list ul li:hover{  background:#fff; border-bottom:2px solid #fbc6c6;box-shadow: 0px 0px 10px #fbc6c6;}
+#list_team .content .title_td_list ul li .left{ width:307px; height:225px; float:left;}
+#list_team .content .title_td_list ul li .left img{width:307px; height:225px;}
+#list_team .content .title_td_list ul li .right{ width:813px; float:right; margin-right:20px;height:209px; position:relative;}
+#list_team .content .title_td_list ul li .right h4{font-size:24px; color:#333; font-family:'微软雅黑'; font-weight:500;height: 70px;line-height: 70px;}
+#list_team .content .title_td_list ul li .right h6{font-size:12px; color:#666; font-family:'微软雅黑'; font-weight:500; line-height:30px;}
+#list_team .content .title_td_list ul li .right h6 span{ margin-right:18px;}
+#list_team .content .title_td_list ul li .right p{font-size:16px; color:#9a9a9a; font-family:'微软雅黑';  line-height:30px;margin-top:20px;}
+#list_team .content .title_td_list ul li .right .xiangqi{ width:90px; height:30px; text-align:center; line-height:30px;font-size:16px; color:#191919; font-family:Arial; position:absolute; bottom:0; right:0;font-weight: 600;}
+#list_team .content .title_td_list ul li:hover .right .xiangqi{  color:#a30202; }
+#list_team .content .paging_lf_trls{ margin-top:42px; width:100%; padding-bottom:20px; text-align:center;}
+#list_team .content .paging_lf_trls ul{ margin:0 auto;width:120px;margin:0 auto;}
+#list_team .content .paging_lf_trls ul li{display:block;text-align:center;width:120px}
+#list_team .content .paging_lf_trls ul li pageinfo{display:flex;width:120px;justify-content:space-between;font-family:'微软雅黑';width:100%;text-align:center;}

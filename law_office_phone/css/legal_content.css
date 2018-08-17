@@ -1,0 +1,24 @@
+/*详情内容*/
+#details_tr{ width:100%;}
+#details_tr .content{ width:94%; margin:0 auto;}
+#details_tr .content .set_up{ width:100%; margin-top:30px;}
+#details_tr .content .set_up img{ width:100%;}
+#details_tr .content h5{font-size:1.4em;font-family:'微软雅黑'; color:#000;  margin-top:18px;}
+#details_tr .content h6{font-size:0.6em;font-family:'微软雅黑'; color:#666; font-weight:inherit; padding:10px 0; border-bottom:1px solid #c2c2c2;}
+#details_tr .content p{font-size:1rem;font-family:'微软雅黑'; color:#666;font-weight:inherit;line-height:25px; margin-top:10px; } 
+
+/*泰仁律师团队样式*/
+#tr_team{ width:100%; background-color:#f1efef;}
+#tr_team .content{width:100%; margin:0 auto;}
+#tr_team .content .ca_words{ text-align:center;}
+#tr_team .content .ca_words h6{ padding-top:15px; font-weight:lighter;font-family:"微软雅黑"; font-size:1.2em; color:#000; text-align:center; }
+#tr_team .content .ca_words h6 span{color:#a30202;}
+#tr_team .content .team_list{ margin-top:26px;}
+#tr_team .content .team_list ul li{ margin-left:3%; width:29.33%; float:left; margin-bottom:24px;}
+#tr_team .content .team_list ul li .team_img{ width:100%; position:relative;}
+#tr_team .content .team_list ul li .team_img img{ width:100%; height:110px;}
+#tr_team .content .team_list ul li .team_img p{ width:100%; height:30px; position:absolute; bottom:0; background-color: rgba(0,0,0,0.5); text-align:center; line-height:30px; font-family:"微软雅黑"; color:#fff; font-size:0.9rem;}
+#tr_team .content .team_list ul li .team_img p span{ margin-left:4px;font-size:0.6rem;}
+#tr_team .content .team_list ul li h6{ width:100%;line-height:36px; font-family:"微软雅黑"; color:#666666; font-size:0.6rem; font-weight:inherit;height: 36px;overflow: hidden;}
+#tr_team .content .team_list ul li .flyz{ width:100%; text-align:center; background:#a30202; height:22px;border-radius: 22px;}
+#tr_team .content .team_list ul li .flyz a{line-height:22px; font-family:"微软雅黑"; color:#fff; font-size:0.6rem;}

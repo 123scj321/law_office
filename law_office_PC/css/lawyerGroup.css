@@ -1,0 +1,39 @@
+
+#list_team{width:100%;}
+#list_team .content{ width:1200px; margin:0 auto;}
+#list_team .content h5{font-size:40px; color:#a30202; font-family:'微软雅黑'; text-align:center; padding-top:40px; padding-bottom:20px;border-bottom: 2px solid #ededed;}
+#list_team .content h5 span{font-size:38px; color:#a30202; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;padding-left:20px;}
+
+#list_team .content .title_but_list{ margin-top:20px;width:100%;}
+#list_team .content .title_but_list #title_but_list{display: flex;justify-content: space-between;width:100%;}
+#list_team .content .title_but_list ul li{  width:120px; height:30px;  margin-left:18.2px; border-radius:50px; text-align:center; line-height:30px;background:#fff;border: 5px solid #fff; margin-right: 0px;}
+#list_team .content .title_but_list ul .li1{ margin-left:0px;}
+#list_team .content .title_but_list ul .li2{border: 2px solid #a30202;}
+#list_team .content .title_but_list ul li a{font-size:16px; color:#333; font-family:'微软雅黑';display: block;width:120px; height:30px;border-radius:50px;border: 5px solid #fff;}
+#list_team .content .title_but_list ul li:hover a{border: 2px solid #a30202; }
+#list_team .content .title_but_list ul .li2 a{color:#a30202;}
+
+#list_team .content .lawy_list{ margin-top:38px; width:1200px;}
+#list_team .content .lawy_list ul{ width:100%; position:relative;}
+#list_team .content .lawy_list ul li{ width:270px; margin-right:40px; float:left;height: 430px;background: #f0f0f0;position:relative;border-radius:5px;margin-top:98px;box-shadow: 0px 0px 4px #ef3333;}
+#list_team .content .lawy_list ul .li1{margin-right:0px;}
+#list_team .content .lawy_list ul li .top img{width:198px; height:198px;border-radius: 50%;margin:20px 36px;}
+#list_team .content .lawy_list ul li .buttom{width:270px; height:100px; }
+#list_team .content .lawy_list ul li .buttom h6{font-size:14px; color:#12111a; font-family:'微软雅黑'; font-weight:500; padding-top:19px; width:250px; margin:0 auto;}
+#list_team .content .lawy_list ul li .buttom h6 .span1{font-size:21px; color:#12111a;  font-weight:700; margin-right:8px;}
+#list_team .content .lawy_list ul li .buttom h6 .span2{ float:right; line-height:40px;}
+#list_team .content .lawy_list ul li .buttom p{font-size:14px; color:#666666; font-family:'微软雅黑'; width:250px; margin:0 auto; padding-top:3px; height:38px; overflow:hidden;}
+#list_team .content .lawy_list ul li h4{font-size:14px; color:#006cff; font-family:'微软雅黑'; font-weight:500; width:268px; margin-top:10px;height: 20px;text-align: center;background: #fff;color: #ef3333;border:1px solid #ef3333;border-radius:5px;}
+#list_team .content .lawy_list ul li .but{ position:relative;width:190px;height:40px; margin:0 auto;display: flex;justify-content: center; margin-top:20px;}
+#list_team .content .lawy_list ul li .but a{ display:inline-block; text-align:center; height:40px; line-height:40px;font-size:16px; color:#fff; font-family:'微软雅黑'; background:#a30202; float:left;width:97px;border-radius: 5px 0px 0px 5px;}
+#list_team .content .lawy_list ul li .but .a1{background:#cdcdcd;border-radius:0px 5px 5px 0px;}
+
+
+
+
+
+#list_team .content .paging_lf_trls{ margin-top:42px; width:100%; padding-bottom:20px; text-align:center;}
+#list_team .content .paging_lf_trls ul{ margin:0 auto;width:120px;margin:0 auto;}
+#list_team .content .paging_lf_trls ul li{display:block;text-align:center;width:120px;background:#fff;}
+#list_team .content .paging_lf_trls ul li pageinfo{display:flex;width:120px;justify-content:space-between;font-family:'微软雅黑';width:100%;text-align:center;}
+

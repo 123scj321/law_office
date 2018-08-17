@@ -1,0 +1,271 @@
+
+
+#legal{ width:100%;}
+#legal .content{ width:1200px; margin:0 auto; padding-bottom:46px;}
+#legal .content .title{ text-align:center; display: flex; justify-content: space-between}
+#legal .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#legal .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#legal .content .title div{width:270px; height: 70px;margin-top:45px;}
+#legal .content .title div h1{color:#a30202;}
+#legal .content .title div h4{color:#9a9a9a;}
+#legal .content .list{ margin-top:48px;}
+#legal .content .list ul li{ width:274px; float:left; margin-left:34.6px; position:relative;}
+#legal .content .list ul .li1{ margin-left:0;}
+#legal .content .list ul li .legal_top{ width:272px;}
+#legal .content .list ul li .legal_top img{ width:198px;height: 198px;border-radius: 50%;margin:34px 40px 0px 40px;}
+#legal .content .list ul li .legal_bottom{  width:272px; height:180px; text-align:center;}
+#legal .content .list ul li .legal_bottom h5{font-size:22px; color:#a30202; font-family:'微软雅黑'; padding-top:16px;}
+#legal .content .list ul li .legal_bottom h5 span{color:#a30202;}
+#legal .content .list ul li .legal_bottom p{font-size:16px; color:#333; font-family:'微软雅黑'; line-height:36px;margin-bottom: 15px;}
+#legal .content .list ul li .legal_bottom h6{ height:38px; width:138px; margin:0 auto; border:1px solid #a30202; border-radius:6px;font-size:18px; color:#fff; font-family:'微软雅黑'; line-height:38px; font-weight:500;background: #a30202}
+
+#field{width:100%; height:650px;background:url('../images/index/index-03.png') no-repeat center top;}
+#field .content{ width:1200px; margin:0 auto;}
+#field .content .field_left{ float:left; width:270px;}
+#field .content .field_left img{
+    margin-top:90px;
+}
+#field .content .field_right{ float:right; width:930px;}
+#field .content .field_right ul{ margin-top:90px;}
+#field .content .field_right ul li{  float:left; margin-left:9px; position:relative; height:240px; margin-bottom:20px; width:175px;}
+#field .content .field_right ul li img{width:175px;}
+#field .content .field_right ul .li1{margin-left:0;}
+/*在线诊断*/
+#advisory{width:100%; height:710px;background:#ececec;}
+#advisory .content{ width:1200px; margin:0 auto;}
+#advisory .content .advisory_left{ width:400px; float:left;margin-top:120px;}
+#advisory .content h5{font-size:36px; color:#a30202; font-family:'微软雅黑'; padding-top:52px;}
+#advisory .content h5 .span1{color:#191919; font-weight:500;}
+#advisory .content  h5 .span2{color:#9a9a9a; font-weight:500;font-size:18px; margin-left:40px;}
+#advisory .content .advisory_left .list{ height:346px; background:#fff; margin-top:20px; width:100%; padding-top:18px; overflow:hidden;}
+#advisory .content .advisory_left .list ul{ width:360px; margin-left:20px; position:relative;}
+#advisory .content .advisory_left .list ul li{ float:left; width:360px; border-bottom: 1px solid #e8e8e8; padding-left:0px; padding-bottom:27px; padding-top:27px;}
+#advisory .content .advisory_left .list ul .li1{ padding-left:0px;}
+#advisory .content .advisory_left .list ul li .left{ float:left; width:60px;}
+#advisory .content .advisory_left .list ul li .left img{width:60px; height:60px; border-radius:50%;}
+#advisory .content .advisory_left .list ul li .right{ float:right; width:280px;}
+#advisory .content .advisory_left .list ul li .right h6{font-size:18px; color:#000; font-family:'微软雅黑'; font-weight:500;}
+#advisory .content .advisory_left .list ul li .right h6 span{font-size:14px; color:#666; float:right; line-height:30px;}
+#advisory .content .advisory_left .list ul li .right p{font-size:14px; color:#333; float:right;font-family:'微软雅黑'; margin-top:8px;}
+
+#advisory .content .advisory_right{ width:360px; float:left;}
+#advisory .content .advisory_right .input_advisory{ height:490px; background:#de6e6e; margin-top:76px; text-align:center;}
+#advisory .content .advisory_right .input_advisory h5{font-size:30px; color:#fff; font-family:'微软雅黑'; padding-top:30px;}
+#advisory .content .advisory_right .input_advisory h6{font-size:16px; color:#fff; font-family:'微软雅黑'; font-weight:500;margin-top:10px; padding-bottom:0px;}
+#advisory .content .advisory_right .input_advisory .textarea{ width:328px; height:180px; margin:25px auto; background: #c86464; position:relative;border-radius: 5px;}
+#advisory .content .advisory_right .input_advisory .textarea textarea{width:328px; height:180px; outline: medium; border: 0;background: transparent;text-indent:2em; font-size:14px; color:#fff; font-family:'微软雅黑'; line-height:36px;border-radius: 5px;}
+#advisory .content .advisory_right .input_advisory .input{ width:328px; height:40px; margin:25px auto;background:#c86464; position:relative;border-radius: 5px;}
+#advisory .content .advisory_right .input_advisory .input input{width:328px; height:40px; outline: medium; border: 0;background: transparent; text-indent:2em;font-size:14px; color:#fff; font-family:'微软雅黑';border-radius: 5px;}
+#advisory .content .advisory_right .input_advisory .button{ width:318px; height:43px; margin:22px 0; text-align:center;cursor:pointer;border-radius: 5px;font-size:16px;margin-left:20px;background: #ffa657;border-radius: 5px;}
+#advisory .content .advisory_right .input_advisory .button input{width:318px; height:43px; outline: medium; border: 0;background: transparent; font-size:18px; color:#fff; font-family:'微软雅黑';cursor: pointer;line-height: 43px;}
+#advisory .content .advisory_right .input_advisory .p_l p{font-size:14px; color:#fff; font-family:'微软雅黑'; text-align:center; margin-top:-10px;}
+
+#advisory .content .advisory_right .input_advisory .input input::-webkit-input-placeholder{ color: #fff;opacity:1;}
+#advisory .content .advisory_right .input_advisory .textarea textarea::-webkit-input-placeholder{ color: #fff;opacity:1;}
+/*律师联盟*/
+#lawyer{width:100%;height:820px;}
+#lawyer .content{ width:1200px; margin:0 auto;}
+#lawyer .content h5{ text-align:center; margin-top:45px;}
+#lawyer .content .title{ text-align:center; display: flex; justify-content: space-between}
+#lawyer .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#lawyer .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#lawyer .content .title div{width:270px; height: 70px;margin-top:45px;}
+#lawyer .content .title div h1{color:#a30202;}
+#lawyer .content .title div h4{color:#9a9a9a;}
+#lawyer.content .lawy_list{ margin-top:39px; width:1200px;height: 480px;}
+#lawyer .content ul{ width:100%; position:relative;}
+#lawyer .content ul li{ width:270px; margin-right:40px; float:left;height: 430px;background: #f0f0f0;position:relative;border-radius:5px;margin-top:98px;box-shadow: 0px 0px 4px #ef3333;}
+#lawyer .content ul .li1{margin-right:0px;}
+#lawyer .content ul li .top img{width:198px; height:198px;border-radius: 50%;margin:20px 36px;}
+#lawyer .content ul li .buttom{width:270px; height:100px; }
+#lawyer .content ul li .buttom h6{font-size:14px; color:#12111a; font-family:'微软雅黑'; font-weight:500; padding-top:19px; width:250px; margin:0 auto;}
+#lawyer .content ul li .buttom h6 .span1{font-size:21px; color:#12111a;  font-weight:700; margin-right:8px;}
+#lawyer .content ul li .buttom h6 .span2{ float:right; line-height:40px;}
+#lawyer .content ul li .buttom p{font-size:14px; color:#666666; font-family:'微软雅黑'; width:250px; margin:0 auto; padding-top:3px; height:38px; overflow:hidden;}
+#lawyer .content ul li h4{font-size:14px; font-family:'微软雅黑'; font-weight:500; width:268px; margin-top:10px;height: 20px;text-align: center;background: #fff;color: #a30202;border:1px solid #ef3333;border-radius:5px;}
+#lawyer .content ul li .but{ position:relative;width:190px;height:40px; margin:0 auto;display: flex;justify-content: center; margin-top:20px;}
+#lawyer .content ul li .but a{ display:inline-block; text-align:center; height:40px; line-height:40px;font-size:16px; color:#fff; font-family:'微软雅黑'; background:#a30202; float:left;width:97px;border-radius: 5px 0px 0px 5px;}
+#lawyer .content ul li .but .a1{background:#cdcdcd;border-radius:0px 5px 5px 0px;}
+
+#lawyer .lawyer_button{width:100%;text-align: center;margin:50px auto;}
+#lawyer .lawyer_button a{
+    padding:7px 34px;
+    color:#a30202;
+    border:1px solid #a30202;
+}
+/*经典案例*/
+#case{width:100%; height:977px;background:url(../images/index/index-44.png) no-repeat center top; position:relative;}
+#case .content{ width:1200px; margin:0 auto;}
+#case .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#case .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#case .content .title{ text-align:center; display: flex; justify-content: space-between;color:#fff;}
+#case .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#case .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#case .content .title div{width:270px; height: 70px;margin-top:45px;}
+#case .content .title div h1{color:#fff;font-weight: bold}
+#case .content .title div h4{color:#fff;}
+#case .content .list{ margin-top:28px;}
+#case .content .list ul li{ width:590px; background:#d9d3d1; height:188px; margin-top:20px; float:left; margin-left:6px;position:relative; }
+#case .content .list ul .li1{ margin-left:0;}
+#case .content .list ul li .left{ width:94px;  height:70px; float:left;}
+#case .content .list ul li .left p{ width:60px; margin:0 auto;font-size:25px; color:#0044a9; font-family:'微软雅黑'; font-weight:700;}
+#case .content .list ul li .left p img{
+    width:170px;height: 150px;
+    margin:20px 0px;
+}
+#case .content .list ul li .left .text_cover{position:absolute;top:20px;left:17px;width:116px;height: 134px;background:rgba(0,0,0,0.3);font-size:50px;font-family:"楷体";padding:8px 27px;font-weight:600;color:#fff;}
+#case .content .list ul li .right{ width:370px; height:110px; float:left; margin-left:120px;color:#fff;
+margin-top:25px;}
+#case .content .list ul li .right h6{font-size:18px; color:#333; font-family:'微软雅黑';font-weight:500;}
+#case .content .list ul li .right p{font-size:14px; color:#333; font-family:'微软雅黑';  height:38px;overflow:hidden;line-height: 38px;}
+#case .content .list ul li .right h4{font-size:14px; color:#333; font-family:'微软雅黑';  height:50px;overflow:hidden;margin-top:30px;}
+#case .content .list ul li:hover{ background:#de6e6e;}
+#case .content .list ul li:hover .right p{ color:#fff;}
+#case .content .list ul li:hover .right h6{color:#fff;}
+#case .content .list ul li:hover .right h4{color:#fff;}
+#case .content .more{ text-align:center;position:absolute;bottom:70px;left:50%;right:50%;margin-left:-83.5px;}
+/*律师推荐*/
+#resummen{width:100%; height:630px; margin-top:66px;}
+#resummen .content{ width:1200px; margin:0 auto;}
+#resummen .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#resummen .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#resummen .content .title{ text-align:center; display: flex; justify-content: space-between;color:#333;}
+#resummen .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#resummen .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#resummen .content .title div{width:270px; height: 70px;margin-top:45px;}
+#resummen .content .title div h4{color:#9a9a9a;}
+#resummen .content .list{ margin-top:28px;}
+#resummen .content .list ul li{ width:120px; text-align: center; height:45px;  float:left; line-height: 45px; }
+#resummen .content .list ul .li1{width:120px; text-align: center; height:45px;  float:left; line-height: 45px; background: #a30202;color:#fff;border-radius: 5px;}
+#resummen .union_lawyer_context{
+    width:100%;
+    height: 194px;
+    background: #f0f0f0;
+    padding-top:35px;
+    margin-top:20px;
+}
+#resummen .union_lawyer_context .content{
+    width:1200px;
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    font-family:'微软雅黑';
+    color:#333;
+    font-size:20px;
+}
+#resummen .union_lawyer_context .content .left{width:150px;height: 140px;padding-top:56px;}
+#resummen .union_lawyer_context .content .img{width:27px;height: 27px;}
+#resummen .union_lawyer_context .content .right{width:150px;vertical-align: center;height: 140px;padding-top:56px;}
+
+#resummen .union_lawyer_context .content span{font-weight: 600}
+#resummen .union_lawyer_context .content .center{
+    width:900px;overflow: hidden;position: relative;
+}
+#resummen .union_lawyer_context .content .center ul{
+    width:21600px;
+    display: flex;
+    height: 140px;
+    position: absolute;
+}
+#resummen .union_lawyer_context .content .center ul li{ width:900px;display: flex;justify-content: center;height: 140px;font-family:'微软雅黑'; color:#333;font-size:20px;}
+#resummen .union_lawyer_context .content .center ul li .address_content{width:900px;display: flex;justify-content: center;height: 140px;font-family:'微软雅黑'; color:#333;font-size:20px;}
+#resummen .union_lawyer_context .content .center ul li .address{ height: 140px;line-height: 140px;font-size:29px;color:#a30202;font-weight: 600;margin-right: 80px;text-align: right;width:30%;
+}
+#resummen .union_lawyer_context .content .center ul li .address_detail{width:70%;text-align: left;line-height: 35px;
+}
+/*党建工作*/
+#party_work{width:100%; height:850px;background:url(../images/index/index-49.png) no-repeat center top;margin-top:-100px;}
+#party_work .content{ width:1200px; margin:0 auto;}
+#party_work .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#party_work .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#party_work .content .title{ text-align:center; display: flex; justify-content: space-between;color:#fff;}
+#party_work .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#party_work .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#party_work .content .title div{width:270px; height: 70px;margin-top:45px;}
+#party_work .content .title div h1{color:#fff;}
+#party_work .context{
+    width:1200px; margin:80px auto;display: flex;justify-content: space-between;height: 526px;
+    background:#c28181;
+}
+#party_work .content  .left{ width:438px;height: 411px; float:left; position:relative;margin:58px 40px;}
+#party_work .content .left .list ul li{ display:none;}
+#party_work .content .left .list ul .li1{ display:block;}
+#party_work .content .left .list ul li img{  width:438px;height: 411px;}
+#party_work .content .left .but{ position:absolute; bottom:30px; right:20px;}
+#party_work .content .left .but ul li{width:12px; height:12px; border-radius:50%; background:#666; float:left; margin-right:12px;cursor: pointer;}
+#party_work .context .right{ width:660px;margin:58px 30px;color:#fff;font-weight: normal;}
+#party_work .context .right h1{font-size:30px;line-height: 60px}
+#party_work .context .right h3{font-size:18px;line-height: 40px}
+#party_work .context .right h4{font-size:14px;line-height: 30px}
+/*新闻中心*/
+#news{width:100%; max-height:630px; margin-top:66px;}
+#news .content{ width:1200px; margin:0 auto;}
+#news .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#news .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#news .content .title{ text-align:center; display: flex; justify-content: space-between;color:#333;}
+#news .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#news .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#news .content .title div{width:270px; height: 70px;margin-top:45px;}
+#news .content .title div h1{color:#a30202;}
+#news .content .title div h4{color:#9a9a9a;font-weight: unset}
+#news .content .list{ margin-top:28px;}
+#news_list li{width:587px; text-align: center; height:133px;  float:left; line-height: 50px; border-radius: 15px;margin-bottom: 20px;}
+#news_list li a{width:587px; text-align: center; height:133px;  float:left; line-height: 50px; display: flex;justify-content: space-between;}
+#news_list li a .news_left{width:124px;height:130px;background:#a30202;color:#fff;border-radius: 5px;}
+#news_list li a .news_left h1{ font-size:72px;font-weight: 600;margin-top:20px;text-align: center;font-family: Arial;}
+#news_list li a .news_left h4{font-size:16px;}
+#news_list li a .news_right{width:433px;height: 105px;margin-right: 20px;}
+#news_list li a .news_right h5{font-size:24px;color:#191919;font-weight: normal;margin-top:-20px;line-height: 24px;text-align: left;}
+#news_list li a .news_right h6{font-size:18px;color:#9a9a9a;font-weight: normal;line-height: 20px;text-align: left;margin-top:30px;}
+
+.news_moew {width:100%;text-align: center;margin:50px auto;}
+.news_moew  a{padding:7px 34px; color:#ef3333;border:1px solid #ef3333;border-radius: 5px;}
+/*服务物流*/
+#server{width:100%; height:850px; margin-top:66px;}
+#server .bg{width:100%;background:url(../images/index/index-50.png) no-repeat center top;height:526px; }
+#server .list{width:1200px; margin:0 auto;}
+#server .list ul{width:100%;height: 359px;display: flex;margin-top:-107px;}
+#server .list ul li{width:300px;height: 359px;border: 1px solid #e2e2e0;}
+#server .list img{width:100%;height: 100%;margin-top:-107px;height: 359px;}
+/*秦悦风采*/
+#show{width:100%; height:120px; margin-top:66px;}
+#show .content{ width:1200px; margin:0 auto;}
+#show .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#show .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#show .content .title{ text-align:center; display: flex; justify-content: space-between;color:#333;}
+#show .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#show .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#show .content .title div{width:270px; height: 70px;margin-top:45px;}
+#show .content .title div h1{color:#a30202;}
+#show .content .title div h4{color:#9a9a9a;font-weight: unset;}
+#surroundings{width:100%; height:290px;margin-top:20px;display: flex;overflow: hidden;justify-content: center;}
+#surroundings .left{width:363px;height: 100%;text-align: right}
+#surroundings .left img{width:46px;height: 156px;margin-top:70px;margin-right: 90px;}
+#surroundings .right{width:363px;height: 100%;text-align: left}
+#surroundings .right img{width:46px;height: 156px;margin-top:70px;margin-left: 90px;}
+#surroundings .content{ width:1200px; margin:0 auto;}
+#surroundings .content .list{width:100%; height:260px; padding-top:25px; overflow:hidden;}
+#surroundings .content .list ul{ position:relative;}
+#surroundings .content .list ul li{ float:left; margin-right:6px; width:232px;}
+#surroundings .content .list ul li img{ width:100%;}
+/*合作客户*/
+#contact{width:100%; height:705px; margin-top:66px;}
+#contact .content{ width:1200px; margin:0 auto;}
+#contact .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#contact .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#contact .content .title{ text-align:center; display: flex; justify-content: space-between;color:#333;}
+#contact .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#contact .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#contact .content .title div{width:270px; height: 70px;margin-top:45px;}
+#contact .content .title div h1{color:#a30202;}
+#contact .content .title div h4{color:#9a9a9a;font-weight: unset;}
+#contact_list{ margin-top:50px;display: flex;justify-content: space-between; flex-wrap: wrap;}
+#contact_list img{width:100%;height:auto;}
+
+
+
+
+
+
+
+

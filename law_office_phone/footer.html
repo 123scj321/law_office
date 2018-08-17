@@ -1,0 +1,87 @@
+<div style=" height:44px;"></div>
+<div id="footer">
+    <ul>
+        <li id="h_but_tr"><a href="javascript:void(0);">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/index_nav.png"></div>
+                <div class="p"><p>网站导航</p></div>
+            </div>
+        </a></li>
+        <li class="li1" id="">
+            <a href="tel:400-809-0059">
+                <div class="foot_cont">
+                    <div class="img"><img src="./images/index/index_ph.png"></div>
+                    <div class="p"><p>立即通话</p></div>
+                    <div id="shake1" class="zx_liang" style="top: 6px;"><p class="liu_jin_tr">23</p></div>
+                </div>
+            </a>
+        </li>
+        <li class="li2"><a href="#cas=44758___154490&amp;fi=48067">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/in_dx.png"></div>
+                <div class="p"><p>免费咨询</p></div>
+                <div id="shake2" class="zx_liang" style="top: 6px;"><p class="liu_jin_trls">14</p></div>
+            </div>
+        </a></li>
+    </ul>
+</div>
+
+<script>
+    $('#h_but_tr').click(function(){
+        if($('#pop_up_tr').css('display')=='none'){
+            $('#pop_up_tr').show(300);
+        }else{
+            $('#pop_up_tr').hide(200);
+        }
+
+    });
+    function shake1(o){
+        var $panel = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $panel.animate({top:10},50);
+            $panel.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd1 = setInterval("shake1('shake1')",4000);
+
+    function shake2(o){
+        var $pane2 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane2.animate({top:10},50);
+            $pane2.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd2 = setInterval("shake2('shake2')",5000);
+
+    function shake3(o){
+        var $pane3 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane3.animate({top:58},50);
+            $pane3.animate({top:52},50);
+        }
+    }
+    var liu_jin_tr_dd3 = setInterval("shake3('shake3')",4000);
+
+    function zx_l_l(){
+        numtr =getRandom(15,30);
+        $('.liu_jin_tr').text(numtr);
+    }
+    var liu_jin_tr = setInterval("zx_l_l()",4000);
+
+    function zx_l_tl(){
+        numrtls =getRandom(10,25);
+        $('.liu_jin_trls').text(numrtls);
+    }
+    var liu_jin_trls = setInterval("zx_l_tl()",5000);
+
+    function getRandom(min,max){
+        var x = max;
+        var y = min;
+        if(x<y){
+            x=min;
+            y=max;
+        }
+        var rand = parseInt(Math.random() * (x - y + 1) + y);
+        return rand;
+    }
+</script>

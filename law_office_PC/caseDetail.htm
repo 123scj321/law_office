@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0027)http://www.tairenlvshi.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>秦岳律师事务所_案例详情_咨询_免费法律咨询</title>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/public.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/caseDetail.css">
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.js"></script>
+</head>
+<style>
+
+</style>
+<body ondragstart="return false">
+{dede:include filename="header.htm"/}
+<div id="banner_case_detail"></div>
+<!---->
+<div id="case">
+    <div class="content">
+        <h5>{dede:field.title/}</h5>
+        <div class="lawy_list" id="lawyer_tr_list">
+            <p>{dede:field.dede_content/}</p>
+        </div>
+    </div>
+</div>
+<!--相关案例-->
+<div id="list_team">
+    <div class="content">
+        <h5>RELATED CASE<span>相关案例</span></h5>
+        <div class="list">
+            <ul>
+                {dede:arclist typeid='18' row='2' addfields='dede_times,dede_subtitle' channelid='18' flag='c' }
+                <li >
+                    <a href="[field:arcurl/]" target="_blank">
+                        <div class="left">
+                            <p><img src="[field:picname/]" alt=""></p>
+                        </div>
+                        <div class="right">
+                            <h6>[field:title/]</h6>
+                            <p>【[field:pubdate function="MyDate('Y-m-d',@me)"/]】</p>
+                            <h4 style="width:98%;height:40px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;">
+                                [field:dede_subtitle/]
+                            </h4>
+                        </div>
+                    </a>
+                </li>
+                {/dede:arclist}
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

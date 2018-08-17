@@ -1,0 +1,107 @@
+/*党建工作*/
+#company_work{width:100%; height:600px;}
+#company_work .content{ width:1200px; margin:0 auto;}
+#company_work .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#company_work .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#company_work .content .title{ text-align:center; display: flex; color:#fff;width:360px;height:60px;line-height: 50px;font-size: 26px;margin:50px auto;}
+#company_work .content .title span:first-child{color:#a30202;width:180px;display: inline-block;}
+#company_work .content .title span:last-child{color:#2f2f2f;width:180px;display: inline-block;}
+#company_work .content .title span .active{display: block;width:120px;margin:0 auto;margin-bottom:-20px;border-bottom:5px solid #a30202;}
+#company_work .context{
+    width:1200px; margin:0px auto;display: flex;justify-content: space-between;height: 504px;
+
+}
+#company_work .content  .left{ width:340px;height: 500px; float:left; position:relative;}
+#company_work .content .left .list ul li{ display:none;}
+#company_work .content .left .list ul .li1{ display:block;}
+#company_work .content .left .list ul li img{  width:340px;height: 500px;}
+#company_work .content .left .but{ position:absolute; bottom:30px; right:20px;}
+#company_work .content .left .but ul li{width:12px; height:12px; border-radius:50%; background:#666; float:left; margin-right:12px;cursor: pointer;}
+#company_work .content  .left img{width:340px;height: 500px;}
+#company_work .context .right{ width:825px;color:#333;font-weight: normal;border:5px solid #cdcdcd;height: 490px;overflow: hidden;}
+#company_work .context .right .right_content{margin:40px;}
+#company_work .context .right .right_content h1{font-size:30px;line-height: 60px;color:#a30202;font-weight: unset;}
+#company_work .context .right .right_content div{font-size:16px;line-height: 30px;}
+#company_work .context .right .right_content div br{margin-top:20px;display: inline-block;}
+
+/*秦悦律师事务所*/
+#laywer_work{width:100%; height:580px;margin-top:90px;font-family:'微软雅黑';}
+#laywer_work .content{ width:1200px; margin:0 auto;}
+#laywer_work .content .title{  color:#fff;width:360px;height:70px;font-size: 26px;}
+#laywer_work .content .title h1{font-size:30px;line-height: 60px;color:#a30202;font-weight: unset;}
+#laywer_work .context{
+    width:1200px; margin:0px auto;height: 526px;text-align: justify-all;
+}
+#laywer_work .context  div p{margin-top:20px;font-size:22px;line-height: 30px;font-weight: unset;margin-bottom: 20px;}
+/*秦悦风采*/
+#fashion{ width:100%;margin-top:80px;}
+#fashion .content{ width:1200px; margin:0 auto; padding-bottom:46px;}
+#fashion .content .title{ text-align:center; display: flex; justify-content: space-between}
+#fashion .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#fashion .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#fashion .content .title div{width:270px; height: 70px;margin-top:45px;}
+#fashion .content .title div h1{color:#a30202;}
+#fashion .content .title div h4{color:#9a9a9a;}
+#fashion  .images_show{width:100%;height: 634px;display: flex;justify-content: center;text-align: center;overflow: hidden;margin:0 auto;}
+#fashion  .images_show .left{width:499px;}
+#fashion  .images_show .center{width:915px;}
+#fashion  .images_show .center .top{display: flex;justify-content: center;width:100%;}
+#fashion  .images_show .right{width:513px;}
+/**/
+/*秦悦风采*/
+#show{width:100%; height:120px; margin-top:66px;}
+#show .content{ width:1200px; margin:0 auto;}
+#show .content .title div h1{color:#a30202;}
+#show .content .title div h4{color:#9a9a9a;}
+#show .grey_bottom_line{border-bottom: 3px solid #9a9a9a;font-size:48px;color: #9a9a9a;font-family: Arial;width: 308px;text-align: left;}
+
+#surroundings{width:100%; height:290px;margin-top:20px;display: flex;overflow: hidden;justify-content: center;}
+#surroundings .left{width:363px;height: 100%;text-align: right}
+#surroundings .left img{width:46px;height: 156px;margin-top:70px;margin-right: 90px;}
+#surroundings .right{width:363px;height: 100%;text-align: left}
+#surroundings .right img{width:46px;height: 156px;margin-top:70px;margin-left: 90px;}
+#surroundings .content{ width:1200px; margin:0 auto;}
+#surroundings .content .list{width:100%; height:260px; padding-top:25px; overflow:hidden;}
+#surroundings .content .list ul{ position:relative;}
+#surroundings .content .list ul li{ float:left; margin-right:6px; width:232px;}
+#surroundings .content .list ul li img{ width:100%;}
+
+/*新闻中心*/
+#culture{width:100%; height:555px; margin-top:66px;}
+#culture .content{ width:1200px; margin:0 auto;}
+#culture .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#culture .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#culture .content .title{ text-align:center; display: flex; justify-content: space-between;color:#333;}
+#culture .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#culture .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#culture .content .title div{width:270px; height: 70px;margin-top:45px;}
+#culture .content .title div h1{color:#a30202;}
+#culture .content .title div h4{color:#9a9a9a;}
+#culture .content .list{ margin-top:28px;}
+#culture .content .list ul li{margin-top:70px;}
+/*新闻中心*/
+#news_list li{width:587px; text-align: center; height:133px;  float:left; line-height: 50px; border-radius: 15px;margin-bottom: 20px;}
+#news_list li a{width:587px; text-align: center; height:133px;  float:left; line-height: 50px; display: flex;justify-content: space-between;}
+#news_list li a .news_left{width:146px;height:146px;margin-right: 20px;}
+#news_list li a .news_left image{width:146px;height: 146px;border-radius: 50%;}
+#news_list li a .news_right{width:433px;height: 105px;margin-right: 20px;}
+#news_list li a .news_right h5{font-size:30px;color:#191919;font-weight: normal;margin-top:0px;line-height: 24px;text-align: left;}
+#news_list li a .news_right h6{font-size:18px;color:#9a9a9a;font-weight: normal;line-height: 20px;text-align: left;margin-top:30px;}
+
+.news_moew {width:100%;text-align: center;margin:50px auto;}
+.news_moew  a{padding:7px 34px; color:#ef3333;border:1px solid #ef3333;border-radius: 5px;}
+
+/*合作客户*/
+#contact{width:100%;  margin-top:80px;}
+#contact .content{ width:1200px; margin:0 auto;}
+#contact .content h5{font-size:36px; color:#fff; font-family:'微软雅黑'; text-align:center; padding-top:42px;}
+#contact .content h5 span{font-size:16px; color:#fff; font-family:'微软雅黑'; text-align:center; font-weight:500; line-height:44px;}
+#contact .content .title{ text-align:center; display: flex; justify-content: space-between;color:#333;}
+#contact .content .title img:first-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#contact .content .title img:last-child{ margin-top:77px; display: inline-block;height: 13px;width:462px;}
+#contact .content .title div{width:270px; height: 70px;margin-top:45px;}
+#contact .content .title div h1{color:#a30202;}
+#contact .content .title div h4{color:#9a9a9a;}
+#contact_list ul{ margin-top:28px;display: flex;justify-content: space-between; flex-wrap: wrap;}
+#contact_list ul li{ width:180px; text-align: center; height:123px; line-height: 50px;margin-top:36px;}
+#contact_list  img{margin-top:60px;}

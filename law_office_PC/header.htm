@@ -1,0 +1,124 @@
+﻿
+<div id="head">
+    <div class="content">
+        <div class="logo"><a href="#" >
+            <img src="{dede:global.cfg_templets_skin/}/images/nav/nav-01.png"></a>
+        </div>
+        <script>
+            function dh(){
+
+                var phone_url = $("#select_k1").val();
+                window.open(phone_url);
+            }
+            $(function () {
+                var url = window.location.href;
+                var arr = url.split("/");
+                var type = arr[arr.length-2];
+                if(type=="lvshilianmeng"){
+                    $("#nav_click li:eq(4)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+                else if(type=="professional"){
+                    $("#nav_click li:eq(1)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+                else if(type=="team"){
+                    $("#nav_click li:eq(2)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+                else if(type=="susonganli"){
+                    $("#nav_click li:eq(3)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+                else if(type=="qinyuexinwen"){
+                    $("#nav_click li:eq(5)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+                else if(type=="dangjiangongzuo"){
+                    $("#nav_click li:eq(6)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+                else if(type=="guanyuwomen"){
+                    $("#nav_click li:eq(7)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+                else{
+                    $("#nav_click li:eq(0)").addClass("li1").siblings(".li1").removeClass("li1");
+                }
+            })
+
+
+        </script>
+        <div class="nav">
+            <div class="clear"></div>
+            <ul id="nav_click">
+
+                <li class="li1"><a href="/" ><h3>秦岳首页</h3><span>HOME</span></a></li>
+                <li ><a href="/professional/" ><h3>业务领域</h3><span>BUSINESS</span></a>
+                        <div id="sub_section">
+                            <div style=" height:20px; background:#fff; margin-top:4px;"></div>
+                            <div class="li_lm"><a href="/professional/professional1/" >交通事故</a></div>
+                            <div class="li_lm"><a href="/professional/professional2/" >工伤赔偿</a></div>
+                            <div class="li_lm"><a href="/professional/professiona3/" >债务合同</a></div>
+                            <div class="li_lm"><a href="/professional/04/" >婚姻家庭</a></div>
+                            <div class="li_lm"><a href="/professional/05/" >房产纠纷</a></div>
+                            <div class="li_lm"><a href="/professional/06/" >刑事辩护</a></div>
+                            <div class="li_lm"><a href="/professional/07/" >劳动争议</a></div>
+                            <div class="li_lm"><a href="/professional/08/" >物业纠纷</a></div>
+                            <div class="li_lm"><a href="/professional/09/" >法律顾问</a></div>
+                            <div class="li_lm"><a href="/professional/10/" >知识产权</a></div>
+                        </div>
+                </li>
+                <li><a href="/team/"><h3>秦岳团队</h3><span>ITEM</span></a>
+                    <div id="sub_section">
+                        <div style=" height:20px; background:#fff; margin-top:4px;"></div>
+                        <div class="li_lm"><a href="/team/" >金牌律师</a></div>
+                    </div>
+                </li>
+                <li><a href="/susonganli/0/"><h3>诉讼案例</h3><span>CASE</span></a>
+                    <div id="sub_section">
+
+                        <div style=" height:20px; background:#fff; margin-top:4px;"></div>
+                        <div class="li_lm"><a href="/susonganli/0/" >刑事辩护</a></div>
+                        <div class="li_lm"><a href="/susonganli/1/" >合同纠纷</a></div>
+                        <div class="li_lm"><a href="/susonganli/2/" >离婚诉讼</a></div>
+                        <div class="li_lm"><a href="/susonganli/3/" >交通事故</a></div>
+                        <div class="li_lm"><a href="/susonganli/4/" >毒品犯罪</a></div>
+                        <div class="li_lm"><a href="/susonganli/5/" >财产纠纷</a></div>
+                        <div class="li_lm"><a href="/susonganli/6/" >损害赔偿</a></div>
+                        <div class="li_lm"><a href="/susonganli/7/" >房产债权</a></div>
+                        <div class="li_lm"><a href="/susonganli/8/" >债权债务</a></div>
+                    </div>
+                </li>
+                <li><a href="/lvshilianmeng/"><h3>联盟律师</h3><span>UNION</span></a>
+                    <div id="sub_section">
+                        <div style=" height:20px; background:#fff; margin-top:4px;"></div>
+                        <div class="li_lm"><a href="/lvshilianmeng/" >联盟律师</a></div>             </div>
+                </li>
+                <li><a href="/qinyuexinwen/" ><h3>秦岳新闻</h3><span>NEWS</span></a>
+                    <div id="sub_section">
+                        <div style=" height:20px; background:#fff; margin-top:4px;"></div>
+                        <div class="li_lm"><a href="/qinyuexinwen/" >新闻中心</a></div>               </div>
+                </li>
+                <li><a href="/dangjiangongzuo/" >
+                    <h3>党建工作</h3><span>PARTY</span></a>
+                    <div id="sub_section">
+                        <div style=" height:20px; background:#fff; margin-top:4px;"></div>
+                        <div class="li_lm"><a href="/dangjiangongzuo/" >党建工作</a></div>
+                    </div>
+                </li>
+                <li><a href="/guanyuwomen/" >
+                    <h3>关于我们</h3><span>ABOUT</span></a>
+                    <div id="sub_section">
+                        <div style=" height:20px; background:#fff; margin-top:4px;"></div>
+                        <div class="li_lm"><a href="/guanyuwomen/" >品牌介绍</a></div>
+                        <div class="li_lm"><a href="/guanyuwomen/" >泰岳风采</a></div>
+                        <div class="li_lm"><a href="/guanyuwomen/" >泰岳文化</a></div>
+                        <div class="li_lm"><a href="/guanyuwomen/" >合作客户</a></div>
+                        <div class="li_lm"><a href="/guanyuwomen/" >联系我们</a></div>
+                    </div>
+                </li>
+            </ul>
+            <script>
+                $("#nav_click li a").click(function(e){
+                    this.preventDefault()
+                    alert(this+"is laert");
+                    $(this).addClass("li1").siblings().removeClass();
+                })
+            </script>
+        </div>
+    </div>
+</div>

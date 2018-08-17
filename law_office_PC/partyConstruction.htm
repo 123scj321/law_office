@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0027)http://www.tairenlvshi.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>秦岳律师事务所_关于我们_咨询_免费法律咨询</title>
+     <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/public.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/partyConstruction.css">
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.js"></script>
+</head>
+<style>
+
+</style>
+<body ondragstart="return false">
+{dede:include filename="header.htm"/}
+<div id="banner_party"></div>
+<div id="list_team">
+    <div class="content">
+        <h5>PARTY BUILDING WORD<span>党建工作</span></h5>
+        <div class="title_td_list">
+            <ul>
+                {dede:list addfields='dede_worktime,dede_shanchang' row='14' channelid='20'}
+                <li >
+                    <a href="[field:arcurl/]" target="_blank">
+                        <div class="left"><img src="[field:picname/]"></div>
+                        <div class="right">
+                            <h4>[field:title/]</h4>
+                            <h6 class="red_bottom_line"></h6>
+                                <p style="overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; width:98%;">
+                                      [field:subtitle/]
+                          		</p>
+                            <a href="[field:arcurl/]" target="_blank"><div class="xiangqi">MORE--></div></a>
+                        </div>
+                    </a>
+                </li>
+                {/dede:list}
+            </ul>
+        </div>
+        <div class="paging_lf_trls">
+            <ul style=" margin:0 auto;width:180px;margin:0 auto;">
+                {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+            </ul>
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}
+
+</body>
+</html>

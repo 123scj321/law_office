@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://m.tairenlvshi.com/contact/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>秦岳律师事务所_在线律师咨询_免费法律咨询</title>
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
+    <script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="./js/iscroll.js"></script>
+</head>
+
+<body class="">
+<div id="ph_header">
+    <img src="./images/index/header.png">
+    <div id="h_but_trt" style="position:absolute; top:10px; right:3%; text-align:center;">
+        <img style=" height:24px;" src="./images/index/xlxx.png">
+    </div>
+    <script>
+        $('#h_but_trt').click(function(){
+            if($('#pop_up_tr').css('display')=='none'){
+                $('#pop_up_tr').show(300);
+            }else{
+                $('#pop_up_tr').hide(200);
+            }
+        });
+    </script>
+    <script>
+        function dh(){
+            var phone_url = $("#select_k1").val();
+            window.location.href=phone_url;
+        }
+
+    </script>
+</div>
+<div style=" height:44px;"></div>
+<!--弹出层1-->
+<div id="pop_up_trls">
+    <div class="content">
+        <h4>立即获取相关案例<img onclick="pop_lp_trlst()" src="./images/index/tu_gb.png"></h4>
+        <ul>
+            <form action="http://m.tairenlvshi.com/contact/index.html" enctype="multipart/form-data" method="post" id="formid">
+                <li><span>类型：</span><select name="select" id="select_k1" class="xla_k">
+                    <option value="106">合同纠纷</option>
+                    <option value="110">刑事辩护</option>
+                    <option value="108">离婚诉讼</option>
+                    <option value="107">交通事故</option>
+                    <option value="104">财产纠纷</option>
+                    <option value="112">房产纠纷</option>
+                    <option value="109">损害赔偿</option>
+                    <option value="1">其他</option>
+                </select></li>
+                <li><span>电话：</span><input type="text" onchange="dh1()" name="phone" id="phone1" value=""></li>
+            </form></ul>
+        <script>
+            function dh1(){
+                var phone1 = $("#phone1").val();
+                if(phone1 && /^1[3|4|5|7|8]\d{9}$/.test(phone1)){
+                }else{
+                    alert("*请输入正确号码");
+                    $("#phone1").val(null);
+                    $("#phone1")[0].focus();
+                }
+            }
+        </script>
+
+        <div class="up_but" onclick="button_lt()"><img src="./images/index/tc_but.png"></div>
+    </div>
+</div>
+<script>
+    function pop_lp_trls(){
+        $('#pop_up_trls').show(200);
+    }
+    function pop_lp_trlst(){
+        $('#pop_up_trls').hide(200);
+    }
+</script>
+<script>
+    function button_lt(){
+        var phone1 = $("#phone1").val();
+        var select_k1 = $("#select_k1").val();
+        if(phone1 && select_k1){
+            $.post("/index/submit.html",{phone:phone1,field:select_k1},function(data,status){
+                if(data==1){
+                    alert('提交成功，秦岳律师稍后联系您！');
+                    window.location.reload();//刷新当前页面.
+                }else{
+                    alert('提交失败，请重新提交！');
+                }
+            });
+        }else{
+            alert('请填写你的咨询内容或电话号码！');
+
+        }
+    }
+
+</script>
+<!--弹出层1结束-->
+<!--弹出层-->
+<div id="pop_up_tr" onclick="dh_tc()" style="overflow: none;">
+    <div class="content_tr">
+        <div class="title_list">
+            <ul>
+                <li class="li1">
+                    <a href="./index.html">
+                        <img src="./index_files/bu_1.jpg">
+                        <p>网站首页</p>
+                    </a>
+                </li>
+                <li class="li2">
+                    <a href="about.html">
+                        <img src="./index_files/bu_2.jpg">
+                        <p>关于秦岳</p>
+                    </a>
+                </li>
+                <li class="li3">
+                    <a href="lawyerGroup.html">
+                        <img src="./index_files/bu_3.jpg">
+                        <p>秦岳团队</p>
+                    </a>
+                </li>
+                <li class="li4">
+                    <a href="case.html">
+                        <img src="./index_files/bu_4.jpg">
+                        <p>诉讼案例</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./index_files/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./index_files/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./index_files/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <h5>业务领域</h5>
+        <div class="ly_list">
+            <ul>
+                <li><a href="#106.html">
+                    <img src="./index_files/bu_6.jpg">
+                    <p>合同纠纷</p>
+                </a></li>
+                <li class="li1"><a href="#110.html">
+                    <img src="./index_files/bu_7.jpg">
+                    <p>刑事辩护</p>
+                </a></li>
+                <li><a href="#108.html">
+                    <img src="./index_files/bu_8.jpg">
+                    <p>离婚诉讼</p>
+                </a></li>
+                <li><a href="#107.html">
+                    <img src="./index_files/bu_9.jpg">
+                    <p>交通事故</p>
+                </a></li>
+                <li class="li1"><a href="#104.html">
+                    <img src="./index_files/bu_10.jpg">
+                    <p>财产纠纷</p>
+                </a></li>
+                <li><a href="#112.html">
+                    <img src="./index_files/bu_11.jpg">
+                    <p>房产纠纷</p>
+                </a></li>
+                <li><a href="#109.html">
+                    <img src="./index_files/bu_12.jpg">
+                    <p>损害赔偿</p>
+                </a></li>
+                <li class="li1"><a href="#105.html">
+                    <img src="./index_files/bu_13.jpg">
+                    <p>毒品犯罪</p>
+                </a></li>
+                <li><a href="#135.html">
+                    <img src="./index_files/bu_14.jpg">
+                    <p>法律顾问</p>
+                </a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--弹出层结束-->
+<script>
+    function dh_tc(){
+        $('#pop_up_tr').hide(200);
+    }
+
+</script>
+
+
+<!--banner-->
+<div id="ph_banner">
+    <a href="http://m.tairenlvshi.com/contact/index.html###"><img src="./images/index/banner.jpg"></a>
+</div>
+<!--banner结束-->
+
+<!--联系我们-->
+<div class="importantNew cfff lianxi">
+    <div class="w">
+        <h1>联系我们</h1>
+        <p>总所地址：四川省成都市锦江区一环路东五段46号天紫界大厦14层</p>
+        <p>联系电话：400-809-0059</p>
+        <p>联系电话：18280376401</p>
+        <p>联系邮箱：kefu@tairenls.com</p>
+        <p>投诉电话：13348966826/028-84457938</p>
+        <p>投诉QQ:1298515837</p>
+    </div>
+</div>
+<!--联系我们end-->
+
+<!--服务流程结束-->
+<!--尾部按钮-->
+<div style=" height:44px;"></div>
+<div id="footer">
+    <ul>
+        <li id="h_but_tr"><a href="javascript:void(0);">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/index_nav.png"></div>
+                <div class="p"><p>网站导航</p></div>
+            </div>
+        </a></li>
+        <li class="li1"><a href="tel:400-809-0059">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/index_ph.png"></div>
+                <div class="p"><p>立即通话</p></div>
+                <div id="shake1" class="zx_liang" style="top: 6px;"><p class="liu_jin_tr">15</p></div>
+            </div>
+        </a></li>
+        <li class="li2"><a href="#cas=44758___154490&amp;fi=48067">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/in_dx.png"></div>
+                <div class="p"><p>免费咨询</p></div>
+                <div id="shake2" class="zx_liang" style="top: 6px;"><p class="liu_jin_trls">20</p></div>
+            </div>
+        </a></li>
+    </ul>
+</div>
+
+<!--尾部按钮结束-->
+<script>
+    $('#h_but_tr').click(function(){
+        if($('#pop_up_tr').css('display')=='none'){
+            $('#pop_up_tr').show(300);
+        }else{
+            $('#pop_up_tr').hide(200);
+        }
+
+    });
+    function shake1(o){
+        var $panel = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $panel.animate({top:10},50);
+            $panel.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd1 = setInterval("shake1('shake1')",4000);
+
+    function shake2(o){
+        var $pane2 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane2.animate({top:10},50);
+            $pane2.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd2 = setInterval("shake2('shake2')",5000);
+
+    function shake3(o){
+        var $pane3 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane3.animate({top:58},50);
+            $pane3.animate({top:52},50);
+        }
+    }
+    var liu_jin_tr_dd3 = setInterval("shake3('shake3')",4000);
+
+    function zx_l_l(){
+        numtr =getRandom(15,30);
+        $('.liu_jin_tr').text(numtr);
+    }
+    var liu_jin_tr = setInterval("zx_l_l()",4000);
+
+    function zx_l_tl(){
+        numrtls =getRandom(10,25);
+        $('.liu_jin_trls').text(numrtls);
+    }
+    var liu_jin_trls = setInterval("zx_l_tl()",5000);
+
+    function getRandom(min,max){
+        var x = max;
+        var y = min;
+        if(x<y){
+            x=min;
+            y=max;
+        }
+        var rand = parseInt(Math.random() * (x - y + 1) + y);
+        return rand;
+    }
+</script>
+</body>
+</html>

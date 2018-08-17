@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://m.tairenlvshi.com/case/content/id/245.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/legal_content.css">
+    <script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="./js/iscroll.js"></script>
+    <title>泰仁律师事务所_在线律师咨询_免费法律咨询</title>
+</head>
+
+<body class=" KSMBCHAT-FULL-BODY">
+<div id="ph_header">
+    <img src="./images/index/header.png">
+    <div id="h_but_trt" style="position:absolute; top:10px; right:3%; text-align:center;">
+        <img style=" height:24px;" src="./images/index/xlxx.png">
+    </div>
+    <script>
+        $('#h_but_trt').click(function(){
+            if($('#pop_up_tr').css('display')=='none'){
+                $('#pop_up_tr').show(300);
+            }else{
+                $('#pop_up_tr').hide(200);
+            }
+        });
+    </script>
+    <script>
+        function dh(){
+            var phone_url = $("#select_k1").val();
+            window.location.href=phone_url;
+        }
+    </script>
+</div>
+<div style=" height:44px;"></div>
+<!--弹出层1-->
+<div id="pop_up_trls">
+    <div class="content">
+        <h4>立即获取相关案例<img onclick="pop_lp_trlst()" src="./images/index/tu_gb.png"></h4>
+        <ul>
+            <form action="" enctype="multipart/form-data" method="post" id="formid">
+                <li><span>类型：</span><select name="select" id="select_k1" class="xla_k">
+                    <option value="106">合同纠纷</option>
+                    <option value="110">刑事辩护</option>
+                    <option value="108">离婚诉讼</option>
+                    <option value="107">交通事故</option>
+                    <option value="104">财产纠纷</option>
+                    <option value="112">房产纠纷</option>
+                    <option value="109">损害赔偿</option>
+                    <option value="1">其他</option>
+                </select></li>
+                <li><span>电话：</span><input type="text" onchange="dh1()" name="phone" id="phone1" value=""></li>
+            </form></ul>
+        <script>
+            function dh1(){
+                var phone1 = $("#phone1").val();
+                if(phone1 && /^1[3|4|5|7|8]\d{9}$/.test(phone1)){
+                }else{
+                    alert("*请输入正确号码");
+                    $("#phone1").val(null);
+                    $("#phone1")[0].focus();
+                }
+            }
+        </script>
+
+        <div class="up_but" onclick="button_lt()"><img src="./images/index/tc_but.png"></div>
+    </div>
+</div>
+<script>
+    function pop_lp_trls(){
+        $('#pop_up_trls').show(200);
+    }
+    function pop_lp_trlst(){
+        $('#pop_up_trls').hide(200);
+    }
+</script>
+<script>
+    function button_lt(){
+        var phone1 = $("#phone1").val();
+        var select_k1 = $("#select_k1").val();
+        if(phone1 && select_k1){
+            $.post("/index/submit.html",{phone:phone1,field:select_k1},function(data,status){
+                if(data==1){
+                    alert('提交成功，泰仁律师稍后联系您！');
+                    window.location.reload();//刷新当前页面.
+                }else{
+                    alert('提交失败，请重新提交！');
+                }
+            });
+        }else{
+            alert('请填写你的咨询内容或电话号码！');
+
+        }
+    }
+
+</script>
+<!--弹出层1结束-->
+<!--弹出层-->
+<div id="pop_up_tr" onclick="dh_tc()">
+    <div class="content_tr">
+        <div class="title_list">
+            <ul>
+                <li class="li1"><a href="http://m.tairenlvshi.com/">
+                    <img src="./images/index/bu_1.jpg">
+                    <p>网站首页</p>
+                </a></li>
+                <li class="li2"><a href="http://m.tairenlvshi.com/about/index.html">
+                    <img src="./images/index/bu_2.jpg">
+                    <p>关于泰仁</p>
+                </a></li>
+                <li class="li3"><a href="http://m.tairenlvshi.com/team/index.html">
+                    <img src="./images/index/bu_3.jpg">
+                    <p>律师团队</p>
+                </a></li>
+                <li class="li4"><a href="http://m.tairenlvshi.com/case/index.html">
+                    <img src="./images/index/bu_4.jpg">
+                    <p>经典案例</p>
+                </a></li>
+                <li class="li5"><a href="http://m.tairenlvshi.com/contact/index.html">
+                    <img src="./images/index/bu_5.jpg">
+                    <p>联系我们</p>
+                </a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <h5>业务领域</h5>
+        <div class="ly_list">
+            <ul>
+                <li><a href="http://m.tairenlvshi.com/business/index/id/106.html">
+                    <img src="./images/index/bu_6.jpg">
+                    <p>合同纠纷</p>
+                </a></li>
+                <li class="li1"><a href="http://m.tairenlvshi.com/business/index/id/110.html">
+                    <img src="./images/index/bu_7.jpg">
+                    <p>刑事辩护</p>
+                </a></li>
+                <li><a href="http://m.tairenlvshi.com/business/index/id/108.html">
+                    <img src="./images/index/bu_8.jpg">
+                    <p>离婚诉讼</p>
+                </a></li>
+                <li><a href="http://m.tairenlvshi.com/business/index/id/107.html">
+                    <img src="./images/index/bu_9.jpg">
+                    <p>交通事故</p>
+                </a></li>
+                <li class="li1"><a href="http://m.tairenlvshi.com/business/index/id/104.html">
+                    <img src="./images/index/bu_10.jpg">
+                    <p>财产纠纷</p>
+                </a></li>
+                <li><a href="http://m.tairenlvshi.com/business/index/id/112.html">
+                    <img src="./images/index/bu_11.jpg">
+                    <p>房产纠纷</p>
+                </a></li>
+                <li><a href="http://m.tairenlvshi.com/business/index/id/109.html">
+                    <img src="./images/index/bu_12.jpg">
+                    <p>损害赔偿</p>
+                </a></li>
+                <li class="li1"><a href="http://m.tairenlvshi.com/business/index/id/105.html">
+                    <img src="./images/index/bu_13.jpg">
+                    <p>毒品犯罪</p>
+                </a></li>
+                <li><a href="http://m.tairenlvshi.com/business/index/id/135.html">
+                    <img src="./images/index/bu_14.jpg">
+                    <p>法律顾问</p>
+                </a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--弹出层结束-->
+<script>
+    function dh_tc(){
+        $('#pop_up_tr').hide(200);
+    }
+
+</script>
+
+
+<!--详情内容-->
+<div id="details_tr">
+    <div class="content">
+        <h5>工地作业时造成失火罪，泰仁助被告获得缓刑</h5>
+        <h6>时间：2017-09-04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 来源：泰仁律师事务所  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 浏览：4991次</h6>
+        <p></p><div class="text_content_body" style="margin:0px;padding:0px;">
+        <p>
+            【案情分类】：刑事辩护
+        </p>
+        <p>
+            【委托时间】：2016年9月12日
+        </p>
+        <p>
+            【案情简介】
+        </p>
+        <p>
+            被告人丁**驾驶挖掘机在一沙地处开挖荒地时，因挖掘机与岩石碰撞摩擦产生火花，引发森林火灾，造成大量林地烧毁。经林业局鉴定：过火林地面积257.5公顷。人民检察院以失火罪对丁**提起公诉。
+        </p>
+        <p>
+            【案件办理】
+        </p>
+        <p>
+            根据法律规定，辩护人的责任是根据事实和法律，提出证明犯罪嫌疑人、被告人无罪、罪轻或者减轻、免除其刑事责任的材料和意见，维护犯罪嫌疑人、被告人的合法权益。所以，作为被告人丁**的辩护人，最大限度地维护他的合法权益，为他争取最轻的处罚是我们的职责所在。从起诉书查明的案件事实来看，公诉机关虽然认定被告人存在过错，但此过错并非导致火灾的全部原因。接受委托之初，辩护人已向被告人的亲属初步了解了案情。从被告人的亲属向我们讲述的他从不同侧面了解到的一些情况来看，有些情况与起诉书指控的事实有不小的出入。本案办理过程中，辩护人先后五次到看守所会见被告人。
+        </p>
+        <p>
+            <br>
+        </p>
+        <p>
+            泰仁律师辩护意见：
+        </p>
+        <p>
+            本案在**市**区人民法院开庭。庭审过程中，辩护人有理有据地一一指出了起诉书指控事实中存在的片面、模糊之处，与公诉人就本案的争点进行了激烈的辩论并取得了良好的效果，并在此基础上根据本案事实、证据，重点从被告人过错、量刑情节方面发表辩护意见如下：
+        </p>
+        <p>
+            一、关于本案中存在的过错
+        </p>
+        <p>
+            1.本案中导致火灾发生的主要原因在于被告人丁**所在的单位并没有在生产作业中采取任何安全防护措施，而且案发当时风速很大，导致火情迅速蔓延，无法控制。2.本案具有很大的偶发性，而且案发当天施工监管人员并不在现场，存在一定过错。3.火灾发生后，被告人丁**积极参与救灾，以减少火灾造成的损失。
+        </p>
+        <p>
+            二、被告人丁**是初犯、偶犯
+        </p>
+        <p>
+            被告人丁**以前从没有过犯罪行为，一贯表现良好，在本次案发之前，没有被司法机关处理过，没有犯罪前科，是初犯、偶犯。与累犯、惯犯相比，其主观恶性和人身危险性较小。辩护人恳请法庭考虑这一情节，对被告人丁**从轻处罚。
+        </p>
+        <p>
+            三、被告人丁**行为的社会危害性小
+        </p>
+        <p>
+            被告人丁**的失火行为具有偶发性，属于过失行为，其行为的社会危害性小。辩护人恳请法庭充分考虑这一情节，对被告人丁**从轻处罚。
+        </p>
+        <p>
+            四、被告人丁**具有自首、认罪、悔罪表现
+        </p>
+        <p>
+            火灾发生后，被告人积极通知单位，并且参与救火，构成自首，而且被告人丁**自被公安机关抓获至今，直至在今天法庭审理中，均坦白交待了自己的犯罪行为，如实供述自己的犯罪经过，始终抱着悔改服罪的正确态度，积极认罪、悔罪，认罪态度非常好，真诚悔罪。根据最高人民法院、最高人民检察院、司法部《关于适用普通程序审理“被告人认罪案件”的若干意见(试行)》第9条“人民法院对自愿认罪的被告人，酌情予以从轻处罚”之规定，辩护人恳请法庭对被告人丁**从轻处罚。
+        </p>
+        <p>
+            综上所述，为了符合打击犯罪和挽救犯罪人的刑法目的，为了严格遵循罪责刑相适应的原则，从惩罚与宽大相结合的刑事司法政策出发，辩护人恳请法庭对被告人丁**从轻处罚，适用缓刑，给被告人一个重新做人的机会，以达到刑罚的感化、教育功效，以体现2015年在党的十六届六中全会上《中共中央关于构建社会主义和谐社会若干重大问题的决定》中所提出的宽严相济的刑事司法政策。
+        </p>
+        <p>
+            【判决结果】
+        </p>
+        <p>
+            经过泰仁律师的成功辩护，最终法院仅判处丁**两年，缓刑三年。
+        </p>
+        <p>
+            【泰仁律师点评】
+        </p>
+        <p>
+            失火罪属于过失犯罪。在处理这类案件过程中，要注意区分放火罪与失火罪、失火罪与重大责任事故罪之间的区别。专业的刑辩律师更应以事实证据为出发点，按照证据三性以及相互之间印证情况进行逐一审查，坚持证据裁判原则，和法官进行充分意见沟通，以及在作量刑辩护时，要综合考虑被告人主观是故意还是过失、具有哪些犯罪情节、危害的客体是什么、被告人主观恶性、人身危险性等各种因素，根据罪责刑相适应的原则，为涉案嫌疑人争取最佳辩护效果。
+        </p>
+        <p>
+            <br>
+        </p>
+        <p style="text-align:right;">
+            泰仁律师事务所刑事辩护部
+        </p>
+    </div><p></p>
+        <br>
+    </div>
+</div>
+<!--详情内容结束-->
+<!--泰仁团队-->
+<div id="tr_team">
+    <div class="content">
+        <div class="ca_words">
+            <h6>同类<span>案件推荐</span>律师</h6>
+        </div>
+        <div class="team_list">
+            <ul>
+                <li><a href="#&amp;fi=48067">
+                    <div class="team_img">
+                        <img src="./images/index/599d476e65fc4.jpg">
+                        <p>瞿政<span>主办律师</span></p>
+                    </div>
+                    <h6>刑事辩护丨合同纠纷丨交通事故</h6>
+                </a>
+                    <div class="flyz">
+                        <a href="#&amp;fi=48067">选TA免费法律援助</a>
+                    </div>
+                </li><li><a href="#&amp;fi=48067">
+                <div class="team_img">
+                    <img src="./images/index/599fe080069f9.jpg">
+                    <p>周凌<span>主任</span></p>
+                </div>
+                <h6>刑事辩护 丨离婚诉讼丨合同纠纷</h6>
+            </a>
+                <div class="flyz">
+                    <a href="#&amp;fi=48067">选TA免费法律援助</a>
+                </div>
+            </li><li><a href="#&amp;fi=48067">
+                <div class="team_img">
+                    <img src="./images/index/599fddda0f8c5.jpg">
+                    <p>李德江<span>金牌律师</span></p>
+                </div>
+                <h6>刑事辩护丨合同纠纷丨离婚辩护</h6>
+            </a>
+                <div class="flyz">
+                    <a href="#&amp;fi=48067">选TA免费法律援助</a>
+                </div>
+            </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--泰仁团队结束-->
+
+
+<!--尾部按钮-->
+<div style=" height:44px;"></div>
+<div id="footer">
+    <ul>
+        <li id="h_but_tr"><a href="javascript:void(0);">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/index_nav.png"></div>
+                <div class="p"><p>网站导航</p></div>
+            </div>
+        </a></li>
+        <li class="li1"><a href="tel:400-809-0059">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/index_ph.png"></div>
+                <div class="p"><p>立即通话</p></div>
+                <div id="shake1" class="zx_liang" style="top: 6px;"><p class="liu_jin_tr">30</p></div>
+            </div>
+        </a></li>
+        <li class="li2"><a href="#&amp;fi=48067">
+            <div class="foot_cont">
+                <div class="img"><img src="./images/index/in_dx.png"></div>
+                <div class="p"><p>免费咨询</p></div>
+                <div id="shake2" class="zx_liang" style="top: 6px;"><p class="liu_jin_trls">12</p></div>
+            </div>
+        </a></li>
+    </ul>
+</div>
+
+<!--尾部按钮结束-->
+<script>
+    $('#h_but_tr').click(function(){
+        if($('#pop_up_tr').css('display')=='none'){
+            $('#pop_up_tr').show(300);
+        }else{
+            $('#pop_up_tr').hide(200);
+        }
+
+    });
+    function shake1(o){
+        var $panel = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $panel.animate({top:10},50);
+            $panel.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd1 = setInterval("shake1('shake1')",4000);
+
+    function shake2(o){
+        var $pane2 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane2.animate({top:10},50);
+            $pane2.animate({top:6},50);
+        }
+    }
+    var liu_jin_tr_dd2 = setInterval("shake2('shake2')",5000);
+
+    function shake3(o){
+        var $pane3 = $("#"+o);
+        for(var i=1; 4>=i; i++){
+            $pane3.animate({top:58},50);
+            $pane3.animate({top:52},50);
+        }
+    }
+    var liu_jin_tr_dd3 = setInterval("shake3('shake3')",4000);
+
+    function zx_l_l(){
+        numtr =getRandom(15,30);
+        $('.liu_jin_tr').text(numtr);
+    }
+    var liu_jin_tr = setInterval("zx_l_l()",4000);
+
+    function zx_l_tl(){
+        numrtls =getRandom(10,25);
+        $('.liu_jin_trls').text(numrtls);
+    }
+    var liu_jin_trls = setInterval("zx_l_tl()",5000);
+
+    function getRandom(min,max){
+        var x = max;
+        var y = min;
+        if(x<y){
+            x=min;
+            y=max;
+        }
+        var rand = parseInt(Math.random() * (x - y + 1) + y);
+        return rand;
+    }
+
+</script>
+</body>
+</html>

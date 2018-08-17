@@ -1,0 +1,179 @@
+<div id="ph_header">
+    <img src="./images/index/header.png">
+    <div id="h_but_trt" style="position:absolute; top:10px; right:3%; text-align:center;">
+        <img style=" height:24px;" src="./images/index/xlxx.png">
+    </div>
+
+    <script>
+        $('#h_but_trt').click(function(){
+            if($('#pop_up_tr').css('display')=='none'){
+                $('#pop_up_tr').show(300);
+            }else{
+                $('#pop_up_tr').hide(200);
+            }
+
+        });
+    </script>
+</div>
+<div style=" height:44px;"></div>
+<!--弹出层1-->
+<div id="pop_up_trls" style="display:none">
+    <div class="content">
+        <h4>立即获取相关案例<img onclick="pop_lp_trlst()" src="./images/index/tu_gb.png"></h4>
+        <ul>
+            <form action="http://m.tairenlvshi.com/" enctype="multipart/form-data" method="post" id="formid">
+                <li><span>类型：</span><select name="select" id="select_k1" class="xla_k">
+                    <option value="106">合同纠纷</option>
+                    <option value="110">刑事辩护</option>
+                    <option value="108">离婚诉讼</option>
+                    <option value="107">交通事故</option>
+                    <option value="104">财产纠纷</option>
+                    <option value="112">房产纠纷</option>
+                    <option value="109">损害赔偿</option>
+                    <option value="1">其他</option>
+                </select></li>
+                <li><span>电话：</span><input type="text" onchange="dh1()" name="phone" id="phone1" value=""></li>
+            </form></ul>
+        <script>
+            function dh1(){
+                var phone1 = $("#phone1").val();
+                if(phone1 && /^1[3|4|5|7|8]\d{9}$/.test(phone1)){
+                }else{
+                    alert("*请输入正确号码");
+                    $("#phone1").val(null);
+                    $("#phone1")[0].focus();
+                }
+            }
+        </script>
+
+        <div class="up_but" onclick="button_lt()"><img src="./images/index/tc_but.png"></div>
+    </div>
+</div>
+<script>
+    function pop_lp_trls(){
+        $('#pop_up_trls').show(200);
+    }
+    function pop_lp_trlst(){
+        $('#pop_up_trls').hide(200);
+    }
+</script>
+<script>
+    function button_lt(){
+        var phone1 = $("#phone1").val();
+        var select_k1 = $("#select_k1").val();
+        if(phone1 && select_k1){
+            $.post("/index/submit.html",{phone:phone1,field:select_k1},function(data,status){
+                if(data==1){
+                    alert('提交成功，泰仁律师稍后联系您！');
+                    window.location.reload();//刷新当前页面.
+                }else{
+                    alert('提交失败，请重新提交！');
+                }
+            });
+        }else{
+            alert('请填写你的咨询内容或电话号码！');
+        }
+    }
+</script>
+<!--弹出层1结束-->
+<!--弹出层-->
+<div id="pop_up_tr" onclick="dh_tc()">
+    <div class="content_tr">
+        <div class="title_list">
+            <ul>
+                <li class="li1">
+                    <a href="./index.html">
+                        <img src="./images/index/bu_1.jpg">
+                        <p>网站首页</p>
+                    </a>
+                </li>
+                <li class="li2">
+                    <a href="about.html">
+                        <img src="./images/index/bu_2.jpg">
+                        <p>关于秦岳</p>
+                    </a>
+                </li>
+                <li class="li3">
+                    <a href="lawyerGroup.html">
+                        <img src="./images/index/bu_3.jpg">
+                        <p>秦岳团队</p>
+                    </a>
+                </li>
+                <li class="li4">
+                    <a href="case.html">
+                        <img src="./images/index/bu_4.jpg">
+                        <p>诉讼案例</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./images/index/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./images/index/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <li class="li5">
+                    <a href="./relative.html">
+                        <img src="./images/index/bu_5.jpg">
+                        <p>联系我们</p>
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <h5>业务领域</h5>
+        <div class="ly_list">
+            <ul>
+                <li><a href="workArea.html">
+                    <img src="./images/index/bu_6.jpg">
+                    <p>合同纠纷</p>
+                </a></li>
+                <li class="li1"><a href="workArea.html">
+                    <img src="./images/index/bu_7.jpg">
+                    <p>刑事辩护</p>
+                </a></li>
+                <li><a href="workArea.html">
+                    <img src="./images/index/bu_8.jpg">
+                    <p>离婚诉讼</p>
+                </a></li>
+                <li><a href="workArea.html">
+                    <img src="./images/index/bu_9.jpg">
+                    <p>交通事故</p>
+                </a></li>
+                <li class="li1"><a href="workArea.html">
+                    <img src="./images/index/bu_10.jpg">
+                    <p>财产纠纷</p>
+                </a></li>
+                <li><a href="workArea.html">
+                    <img src="./images/index/bu_11.jpg">
+                    <p>房产纠纷</p>
+                </a></li>
+                <li><a href="workArea.html">
+                    <img src="./images/index/bu_12.jpg">
+                    <p>损害赔偿</p>
+                </a></li>
+                <li class="li1"><a href="workArea.html">
+                    <img src="./images/index/bu_13.jpg">
+                    <p>毒品犯罪</p>
+                </a></li>
+                <li><a href="workArea.html">
+                    <img src="./images/index/bu_14.jpg">
+                    <p>法律顾问</p>
+                </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--弹出层结束-->
+<script>
+    function dh_tc(){
+        $('#pop_up_tr').hide(200);
+    }
+</script>

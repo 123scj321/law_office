@@ -1,0 +1,17 @@
+/*banner样式*/
+#ph_banner{ width:100%;}
+#ph_banner img{ width:100%;}
+
+/*成功案例*/
+#case{width:100%;}
+#case .content{width:94%; margin:0 auto;}
+#case .content h5{font-family:"微软雅黑"; font-size:0.8rem; color:#999; font-weight:inherit; line-height:30px;}
+#case .content h5 span{font-family:"微软雅黑"; font-size:1.2rem; color:#000; border-bottom:3px solid #a30202; display:inline-block; margin-right:20px;line-height: 44px;}
+#case .content h5 a{font-family:"微软雅黑"; font-size:1.6em; color:#fff; display:inline-block; float:right; background:#c3c3c3; width:150px; height:50px; margin-top:45px;border-radius: 40px; text-align:center; line-height:50px; }
+#case .content .case_list ul li{ height:86px; border-top:1px solid #c3c3c3;}
+#case .content .case_list ul li h6{font-family:"微软雅黑"; font-size:1rem; color:#333333; line-height:40px;height:40px; overflow:hidden;}
+#case .content .case_list ul li h6 span{color:#a30202;}
+#case .content .case_list ul li p{font-family:"微软雅黑"; font-size:0.8rem; color:#999999; height:34px; overflow:hidden;}
+#case .content .case_list ul .different h6{ color:#b40000;}
+#case .content .trle_m{ width:100%;}
+#case .content .trle_m .l_m{ width:40%; height:30px;    margin: 16px auto; border: 1px solid #999; border-radius: 50px; font-family: "微软雅黑";font-size: 1em; color: #999999; text-align:center; line-height:30px;}
